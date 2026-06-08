@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#24080a" />
   <meta name="description" content="Thiệp cưới cổ phong Trung Hoa của Tấn Phát và Hồng Ngọc" />
-  <title>Tấn Phát & Hồng Ngọc — Celestial Palace Wedding Invitation V10</title>
+  <title>Tấn Phát & Hồng Ngọc — Only One Final Wedding Invitation</title>
   <link rel="icon" href="assets/heart.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body class="site-locked variant-v10" data-lang="vi">
+<body class="site-locked variant-v13 variant-v14 variant-best variant-v15 variant-v16 variant-final" data-lang="vi">
   <audio id="bgMusic" preload="metadata" loop>
     <source src="assets/music/wedding-song.mp3" type="audio/mpeg" />
   </audio>
@@ -41,6 +41,10 @@
   <div class="spark-field" id="sparkField" aria-hidden="true"></div>
   <div class="firework-field" id="fireworkField" aria-hidden="true"></div>
   <div class="golden-rain" id="goldenRain" aria-hidden="true"></div>
+  <div class="star-field" id="starField" aria-hidden="true"></div>
+  <div class="jade-orb-field" id="jadeOrbField" aria-hidden="true"></div>
+  <div class="spirit-lantern-field" id="spiritLanternField" aria-hidden="true"></div>
+  <div class="lotus-glow-field" id="lotusGlowField" aria-hidden="true"></div>
   <div class="stamp-flash" id="stampFlash" aria-hidden="true">囍</div>
 
   <section class="gate-overlay" id="gateOverlay" aria-label="Mở thiệp cưới">
@@ -52,6 +56,16 @@
     <div class="immortal-mist mist-right"></div>
     <div class="dragon-line dragon-left"></div>
     <div class="dragon-line dragon-right"></div>
+    <div class="phoenix-trail phoenix-left"></div>
+    <div class="phoenix-trail phoenix-right"></div>
+    <div class="pearls-arc"></div>
+    <div class="phoenix-crown crown-left"><span class="crest-char">龙</span><small data-i18n="dragonLabel">Rồng</small><b></b><i></i></div>
+    <div class="phoenix-crown crown-right"><span class="crest-char">凤</span><small data-i18n="phoenixLabel">Phượng</small><b></b><i></i></div>
+    <div class="dragon-phoenix-banner banner-left"><span data-i18n="dragonBanner">Long môn đại cát</span></div>
+    <div class="dragon-phoenix-banner banner-right"><span data-i18n="phoenixBanner">Phụng vũ cát tường</span></div>
+    <div class="royal-rays"></div>
+    <div class="moon-bridge"></div>
+    <div class="celestial-wave"></div>
     <div class="gate-stage">
       <div class="gate-roof">
         <div class="roof-main"></div>
@@ -114,7 +128,7 @@
 
       <div class="gate-base"></div>
     </div>
-    <div class="version-ribbon">V10</div>
+    <div class="version-ribbon">FINAL</div>
     <div class="gate-open-hint">
       <button class="open-btn floating-open" id="openGateFloating" type="button" data-i18n="openButton">Mở thiệp</button>
       <p data-i18n="clickHint">Nhấn để mở cổng cung đình</p><div class="tap-arrow">⌄</div><div class="tap-glow"></div>
@@ -167,6 +181,11 @@
             <a class="btn primary" href="#event" data-i18n="seeEvent">Xem địa điểm</a>
             <a class="btn ghost" href="wedding.ics" download data-i18n="addCalendar">Thêm vào lịch</a>
           </div>
+          <div class="v16-quick-badges reveal delay-1">
+            <span class="v16-badge" data-i18n="finalBadge1">Phien ban chot cuoi</span>
+            <span class="v16-badge" data-i18n="finalBadge2">Long phung co phong</span>
+            <span class="v16-badge" data-i18n="finalBadge3">VI / EN / 简中 / 繁中</span>
+          </div>
         </div>
 
         <div class="hero-visual reveal delay-1" id="heroCard">
@@ -210,25 +229,30 @@
     </section>
 
 
-    <section class="v10-royal-path section">
-      <div class="container v10-path-grid">
-        <article class="v10-path-card reveal">
-          <span class="v10-card-seal">宫</span>
-          <p class="section-kicker" data-i18n="v10Kicker">Cung điện thiên duyên</p>
-          <h2 data-i18n="v10Title">Một lối vào rực sáng như bước qua cổng trời.</h2>
-          <p data-i18n="v10Text">V10 được làm theo hướng sang trọng hơn: cung môn nhiều lớp, ánh ngọc, lụa đỏ, hồ sen, sương tiên hiệp và hiệu ứng mở cổng rõ ràng hơn.</p>
-        </article>
-        <div class="v10-mini-palace reveal delay-1" aria-hidden="true">
-          <div class="mini-roof"></div>
-          <div class="mini-pillars"></div>
-          <div class="mini-door">囍</div>
+    <section class="signature-scene section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker" data-i18n="finalKicker">Ban chot cuoi</p>
+          <h2 data-i18n="finalTitle">Một đêm long phụng, hoa đăng và nguyệt sắc dành riêng cho Tấn Phát & Hồng Ngọc.</h2>
+          <p data-i18n="finalText">Đây là bản chốt cuối cùng mình chọn cho bạn: giữ vẻ sang trọng của cung đình, độ huyền ảo của tiên hiệp, sự rõ ràng của long phụng và trải nghiệm mượt trên cả desktop lẫn mobile.</p>
         </div>
-        <article class="v10-path-card reveal delay-2">
-          <span class="v10-card-seal">缘</span>
-          <p class="section-kicker" data-i18n="v10Kicker2">Hỷ sự thành đôi</p>
-          <h2 data-i18n="v10Title2">Đỏ son, vàng kim, trăng sáng và lời chúc phúc.</h2>
-          <p data-i18n="v10Text2">Toàn bộ trải nghiệm vẫn giữ đủ VI / EN / 简中 / 繁中, phù hợp mở trên điện thoại và máy tính.</p>
-        </article>
+        <div class="signature-grid">
+          <article class="signature-card reveal">
+            <div class="signature-icon">龙</div>
+            <h3 data-i18n="finalCard1Title">Cổng son long phụng</h3>
+            <p data-i18n="finalCard1Text">Hiệu ứng mở cổng là điểm nhấn đầu tiên: sang, rõ, dễ bấm và tạo cảm giác nghi lễ ngay khi mở thiệp.</p>
+          </article>
+          <article class="signature-card reveal delay-1">
+            <div class="signature-icon">月</div>
+            <h3 data-i18n="finalCard2Title">Nguyệt sắc mộng ảo</h3>
+            <p data-i18n="finalCard2Text">Giữ lại tinh thần trăng sáng, sương ngọc, đèn linh và hoa rơi để tổng thể lãng mạn, mềm mại và có chiều sâu thị giác.</p>
+          </article>
+          <article class="signature-card reveal delay-2">
+            <div class="signature-icon">囍</div>
+            <h3 data-i18n="finalCard3Title">Một bản hoàn chỉnh</h3>
+            <p data-i18n="finalCard3Text">Giữ đầy đủ ảnh cưới, câu chuyện, thông tin cưới, RSVP, đa ngôn ngữ và nhạc nền để bạn có thể dùng ngay làm bản chính thức.</p>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -369,6 +393,14 @@
       </div>
     </section>
   </main>
+
+
+  <div class="mobile-dock" id="mobileDock">
+    <a href="#event" class="mobile-dock-btn"><span>⌘</span><small data-i18n="dockEvent">Hỷ sự</small></a>
+    <a href="#gallery" class="mobile-dock-btn"><span>◈</span><small data-i18n="dockGallery">Ảnh</small></a>
+    <button type="button" class="mobile-dock-btn mobile-dock-primary" id="dockMusic"><span>♪</span><small data-i18n="dockMusic">Nhạc</small></button>
+    <a href="#rsvp" class="mobile-dock-btn"><span>✉</span><small data-i18n="dockRsvp">RSVP</small></a>
+  </div>
 
   <footer class="footer">
     <div class="footer-mark">囍</div>

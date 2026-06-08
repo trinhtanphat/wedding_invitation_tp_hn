@@ -387,3 +387,144 @@ body.variant-v10.gate-open .v10-heaven-ring{opacity:0;transition:.5s ease}
   .v10-silk-ribbon,.v10-heaven-ring{display:none}
   .lotus-lake{width:90%;height:54px}
 }
+
+
+/* V11 Dragon Phoenix Opera */
+body.variant-v11{background:radial-gradient(circle at 50% -8%, rgba(255,223,156,.22), transparent 22%), linear-gradient(180deg,#180507 0%,#28090d 42%,#1a0407 100%);}
+.star-field{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}.star-dot{position:absolute;width:3px;height:3px;border-radius:50%;background:#ffe9b8;box-shadow:0 0 10px rgba(255,233,184,.75);opacity:.45;animation:starBlink ease-in-out infinite}@keyframes starBlink{0%,100%{opacity:.18;transform:scale(.8)}50%{opacity:.95;transform:scale(1.35)}}
+body.variant-v11 .v10-heaven-ring{background:radial-gradient(circle, rgba(252,229,182,.24), rgba(219,92,79,.10) 36%, transparent 68%);filter:blur(2px)}
+body.variant-v11 .phoenix-trail{position:absolute;top:92px;width:240px;height:240px;border-radius:50%;pointer-events:none;opacity:.34;filter:blur(2px)}
+body.variant-v11 .phoenix-left{left:6%;background:conic-gradient(from 120deg, transparent 0 28%, rgba(255,220,146,.0) 28% 34%, rgba(255,220,146,.72) 34% 45%, rgba(212,85,70,.0) 45% 100%);transform:rotate(-14deg);animation:phoenixWave 7s ease-in-out infinite}
+body.variant-v11 .phoenix-right{right:6%;background:conic-gradient(from -40deg, transparent 0 30%, rgba(255,220,146,.0) 30% 34%, rgba(255,220,146,.72) 34% 45%, rgba(212,85,70,.0) 45% 100%);transform:scaleX(-1) rotate(-14deg);animation:phoenixWave 7s ease-in-out infinite reverse}
+body.variant-v11 .pearls-arc{position:absolute;left:50%;top:74px;transform:translateX(-50%);width:min(720px,76vw);height:160px;border-top:2px dashed rgba(247,223,168,.42);border-radius:0 0 50% 50%/0 0 100% 100%;opacity:.55;pointer-events:none}
+body.variant-v11 .pearls-arc::before, body.variant-v11 .pearls-arc::after{content:"";position:absolute;top:-7px;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 35%, #fff8e8, #e6b86b 75%);box-shadow:0 0 18px rgba(255,224,158,.38)}
+body.variant-v11 .pearls-arc::before{left:16%} body.variant-v11 .pearls-arc::after{right:16%}
+@keyframes phoenixWave{0%,100%{transform:translateY(0) rotate(-14deg)}50%{transform:translateY(-10px) rotate(-8deg)}}
+body.variant-v11 .gate-stage{transform:translateY(6px)}
+body.variant-v11 .roof-main{background:linear-gradient(180deg,#6b1418,#2b0608)}
+body.variant-v11 .forbidden-plaque{background:linear-gradient(180deg,#4d150f,#271007);box-shadow:0 12px 32px rgba(0,0,0,.28), inset 0 0 0 2px rgba(253,227,171,.12)}
+body.variant-v11 .invitation-scroll{background:linear-gradient(180deg,#fff6e7,#efd7aa)}
+body.variant-v11 .open-btn{background:linear-gradient(135deg,#c1282f,#7d1015)}
+.imperial-vow-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:stretch}.imperial-vow-card{position:relative;background:linear-gradient(180deg,#fbf1df,#f3dfbb);color:#4a201d;padding:40px;border-radius:32px;border:1px solid rgba(122,36,31,.14);box-shadow:0 24px 70px rgba(0,0,0,.18)}
+.imperial-vow-card::before{content:"";position:absolute;inset:16px;border:1px solid rgba(199,154,75,.24);border-radius:22px;pointer-events:none}.imperial-vow-card h2{font-size:clamp(34px,4vw,60px);margin:8px 0 14px;color:#6b1718}.imperial-vow-card p:last-child{color:#6d4f47}.imperial-icon{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#f7e3bd,#d29d4e);color:#8d1518;font-family:var(--serif);font-size:36px;margin-bottom:16px;box-shadow:0 14px 28px rgba(0,0,0,.16)}
+.imperial-vow-side{position:relative;min-height:320px;border-radius:32px;background:linear-gradient(180deg,rgba(109,14,17,.92),rgba(60,7,10,.96));border:1px solid rgba(245,218,163,.16);box-shadow:0 24px 70px rgba(0,0,0,.22);display:grid;place-items:center;overflow:hidden}.imperial-vow-side::before{content:"";position:absolute;inset:22px;border:1px solid rgba(245,218,163,.18);border-radius:22px}.mini-banner{position:relative;z-index:2;padding:16px 26px;border-radius:999px;background:linear-gradient(135deg,#f6e0b8,#cf9949);color:#7d1618;font-family:var(--serif);font-size:28px;box-shadow:0 14px 30px rgba(0,0,0,.18)}.mini-banner.top{transform:translateY(-20px)}.mini-banner.bottom{transform:translateY(20px)}.mini-seal{position:relative;z-index:2;width:98px;height:98px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#f7e4c0,#d39d4d);color:#8b1519;font-family:var(--serif);font-size:54px;box-shadow:0 16px 36px rgba(0,0,0,.2)}
+.imperial-vow-side::after{content:"";position:absolute;inset:auto -12% -26% -12%;height:180px;background:radial-gradient(circle at 50% 0, rgba(245,218,163,.22), transparent 70%)}
+@media (max-width:980px){.imperial-vow-grid{grid-template-columns:1fr}.imperial-vow-side{min-height:240px}.mini-banner{font-size:24px}}
+@media (max-width:640px){.imperial-vow-card{padding:28px}.imperial-vow-card h2{font-size:38px}.mini-banner{font-size:20px;padding:14px 18px}.mini-seal{width:82px;height:82px;font-size:42px}.phoenix-trail,.pearls-arc{display:none}}
+
+
+/* V12 explicit dragon & phoenix */
+body.variant-v12{background:radial-gradient(circle at 50% -8%, rgba(255,230,170,.26), transparent 22%), linear-gradient(180deg,#170406 0%,#2c0a0e 42%,#1a0407 100%)}
+body.variant-v12 .gate-overlay{background:radial-gradient(circle at center, rgba(112,18,24,.22), rgba(7,1,2,.85))}
+body.variant-v12 .phoenix-crown{position:absolute;top:150px;z-index:11;width:168px;height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border-radius:90px 90px 36px 36px;background:linear-gradient(180deg,rgba(248,227,177,.16),rgba(153,27,31,.16));border:1px solid rgba(245,218,163,.26);box-shadow:0 20px 50px rgba(0,0,0,.22), inset 0 0 0 1px rgba(255,255,255,.06);backdrop-filter:blur(2px)}
+body.variant-v12 .phoenix-crown::before{content:"";position:absolute;top:-18px;left:50%;transform:translateX(-50%);width:120px;height:46px;background:linear-gradient(180deg,#f9e9c3,#dca34a);clip-path:polygon(50% 0,63% 34%,82% 18%,74% 50%,100% 46%,80% 76%,88% 100%,58% 84%,50% 100%,42% 84%,12% 100%,20% 76%,0 46%,26% 50%,18% 18%,37% 34%);box-shadow:0 8px 18px rgba(0,0,0,.22)}
+body.variant-v12 .phoenix-crown.crown-left{left:max(22px,4vw)} body.variant-v12 .phoenix-crown.crown-right{right:max(22px,4vw)}
+body.variant-v12 .crest-char{font-family:var(--serif);font-size:72px;line-height:1;color:#ffe7b1;text-shadow:0 0 16px rgba(255,231,177,.28),0 10px 24px rgba(0,0,0,.18)}
+body.variant-v12 .phoenix-crown small{margin-top:8px;color:#f7e3bc;font-size:18px;font-weight:900;letter-spacing:.02em;text-transform:uppercase}
+body.variant-v12 .phoenix-crown b, body.variant-v12 .phoenix-crown i{position:absolute;display:block;border-radius:999px;pointer-events:none}
+body.variant-v12 .phoenix-crown b{width:132px;height:132px;border:2px solid rgba(255,229,169,.32);top:44px}
+body.variant-v12 .phoenix-crown i{width:84px;height:84px;border:2px dashed rgba(220,159,74,.38);top:68px;animation:crownSpin 12s linear infinite}@keyframes crownSpin{to{transform:rotate(360deg)}}
+body.variant-v12 .dragon-phoenix-banner{position:absolute;top:392px;z-index:11;width:148px;min-height:220px;padding:18px 16px;background:linear-gradient(180deg,#b61f25,#730e12);border:2px solid rgba(244,216,156,.34);box-shadow:0 20px 40px rgba(0,0,0,.24);display:flex;align-items:center;justify-content:center;border-radius:14px 14px 20px 20px;writing-mode:vertical-rl;text-orientation:mixed}
+body.variant-v12 .dragon-phoenix-banner span{color:#f8e8ca;font-family:var(--serif);font-size:26px;letter-spacing:.08em}
+body.variant-v12 .banner-left{left:max(36px,5vw)} body.variant-v12 .banner-right{right:max(36px,5vw)}
+body.variant-v12 .dragon-phoenix-banner::after{content:"";position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);width:20px;height:40px;background:linear-gradient(180deg,#f1d69d,#bb8030);clip-path:polygon(0 0,100% 0,68% 100%,32% 100%)}
+body.variant-v12 .gate-stage{width:min(1040px,100%)}
+body.variant-v12 .gate-roof{width:min(760px,74%)} body.variant-v12 .gate-inner{width:min(700px,70%)} body.variant-v12 .gate-base{width:min(790px,76%)}
+body.variant-v12 .dragon-line, body.variant-v12 .phoenix-trail{opacity:.62} body.variant-v12 .dragon-line{filter:drop-shadow(0 0 14px rgba(242,196,110,.18))}
+body.variant-v12 .pearls-arc{top:56px;opacity:.7}
+body.variant-v12 .forbidden-plaque{letter-spacing:.02em}
+.dragon-phoenix-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.dragon-card,.phoenix-card{position:relative;padding:38px;border-radius:32px;background:linear-gradient(180deg,#fbf1df,#f1debb);color:#4a201d;border:1px solid rgba(122,36,31,.14);box-shadow:0 24px 70px rgba(0,0,0,.18)}
+.dragon-card::before,.phoenix-card::before{content:"";position:absolute;inset:16px;border-radius:22px;border:1px solid rgba(199,154,75,.24);pointer-events:none}.dp-icon{width:76px;height:76px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#f7e3bd,#d29d4e);color:#8d1518;font-family:var(--serif);font-size:40px;margin-bottom:14px;box-shadow:0 14px 28px rgba(0,0,0,.16)}
+.dragon-card h2,.phoenix-card h2{font-size:clamp(30px,3.6vw,52px);color:#6b1718;margin:8px 0 14px}.dragon-card p:last-child,.phoenix-card p:last-child{color:#6d4f47}
+@media (max-width:1180px){body.variant-v12 .phoenix-crown{width:132px;height:184px;top:178px}.crest-char{font-size:60px}body.variant-v12 .phoenix-crown small{font-size:15px}body.variant-v12 .dragon-phoenix-banner{width:118px;min-height:180px;top:392px}body.variant-v12 .dragon-phoenix-banner span{font-size:22px}}
+@media (max-width:980px){body.variant-v12 .phoenix-crown{top:92px;width:102px;height:146px}.body.variant-v12 .phoenix-crown::before{width:82px}.body.variant-v12 .crest-char{font-size:44px}.body.variant-v12 .phoenix-crown small{font-size:12px}body.variant-v12 .dragon-phoenix-banner{top:256px;width:84px;min-height:126px;padding:12px 8px}body.variant-v12 .dragon-phoenix-banner span{font-size:18px}body.variant-v12 .gate-roof{width:min(620px,74%)} body.variant-v12 .gate-inner{width:min(560px,72%)} body.variant-v12 .gate-base{width:min(640px,76%)}.dragon-phoenix-grid{grid-template-columns:1fr}}
+@media (max-width:640px){body.variant-v12 .phoenix-crown{top:86px;width:74px;height:112px;border-radius:40px 40px 20px 20px}.body.variant-v12 .phoenix-crown::before{width:54px;height:24px;top:-10px}.body.variant-v12 .crest-char{font-size:32px}.body.variant-v12 .phoenix-crown small{font-size:10px;margin-top:3px}.body.variant-v12 .phoenix-crown b,.body.variant-v12 .phoenix-crown i{display:none}body.variant-v12 .dragon-phoenix-banner{display:none}body.variant-v12 .gate-roof{width:min(540px,78%)} body.variant-v12 .gate-inner{width:min(300px,86%)}.dragon-card,.phoenix-card{padding:28px}.dragon-card h2,.phoenix-card h2{font-size:34px}}
+
+@media (max-width:980px){body.variant-v12 .phoenix-crown::before{width:82px} body.variant-v12 .crest-char{font-size:44px} body.variant-v12 .phoenix-crown small{font-size:12px}}
+@media (max-width:640px){body.variant-v12 .phoenix-crown::before{width:54px;height:24px;top:-10px} body.variant-v12 .crest-char{font-size:32px} body.variant-v12 .phoenix-crown small{font-size:10px;margin-top:3px}}
+
+
+/* V13 3D Luxe */
+body.variant-v13{background:radial-gradient(circle at 50% -8%, rgba(255,223,156,.30), transparent 22%), linear-gradient(180deg,#190406 0%,#30090d 40%,#1d0507 100%)}
+body.variant-v13 .gate-overlay{background:radial-gradient(circle at center, rgba(118,18,26,.25), rgba(8,1,2,.86))}
+body.variant-v13 .royal-rays{position:absolute;left:50%;top:124px;transform:translateX(-50%);width:min(900px,90vw);height:460px;pointer-events:none;background:conic-gradient(from 0deg, rgba(255,236,190,0) 0 8%, rgba(255,236,190,.18) 8% 10%, rgba(255,236,190,0) 10% 16%, rgba(255,236,190,.12) 16% 18%, rgba(255,236,190,0) 18% 100%);filter:blur(2px);opacity:.52;animation:raySpin 24s linear infinite}@keyframes raySpin{to{transform:translateX(-50%) rotate(360deg)}}
+.jade-orb-field{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}.jade-orb{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%, rgba(255,253,244,.95), rgba(197,236,224,.72) 36%, rgba(215,166,82,.34) 72%, rgba(255,255,255,0) 100%);box-shadow:0 0 20px rgba(255,236,190,.22);opacity:.55;animation:orbFloat ease-in-out infinite}@keyframes orbFloat{0%,100%{transform:translate3d(0,0,0) scale(.9)}50%{transform:translate3d(var(--dx),-24px,0) scale(1.08)}}
+body.variant-v13 .phoenix-crown{background:linear-gradient(180deg, rgba(248,227,177,.24), rgba(153,27,31,.24));box-shadow:0 26px 60px rgba(0,0,0,.26), inset 0 0 0 1px rgba(255,255,255,.08)}
+body.variant-v13 .crest-char{font-size:82px;text-shadow:0 0 18px rgba(255,239,196,.35),0 14px 30px rgba(0,0,0,.24)}
+body.variant-v13 .phoenix-crown b{box-shadow:0 0 0 6px rgba(255,226,169,.08)}
+body.variant-v13 .dragon-phoenix-banner{background:linear-gradient(180deg,#c1272e,#7b1014);box-shadow:0 24px 48px rgba(0,0,0,.28), inset 0 0 0 2px rgba(255,234,196,.06)}
+body.variant-v13 .dragon-phoenix-banner span{font-size:28px}
+body.variant-v13 .forbidden-plaque{transform:translateY(-2px);box-shadow:0 16px 32px rgba(0,0,0,.28), inset 0 0 0 1px rgba(255,247,220,.08)}
+body.variant-v13 .door-panel{box-shadow:inset 0 0 0 1px rgba(248,226,188,.22), inset 0 -40px 50px rgba(0,0,0,.12)}
+body.variant-v13 .invitation-scroll{box-shadow:0 28px 80px rgba(0,0,0,.24), inset 0 0 0 1px rgba(126,23,28,.10)}
+.royal-luxe-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:24px}.royal-luxe-card,.royal-feature-card{position:relative;padding:38px;border-radius:32px;background:linear-gradient(180deg,#fbf1df,#f1debb);color:#4a201d;border:1px solid rgba(122,36,31,.14);box-shadow:0 24px 70px rgba(0,0,0,.18)}
+.royal-luxe-card::before,.royal-feature-card::before{content:"";position:absolute;inset:16px;border:1px solid rgba(199,154,75,.24);border-radius:22px;pointer-events:none}.luxe-badge{width:78px;height:78px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#f7e4c0,#d39d4d);color:#8d1518;font-family:var(--serif);font-size:42px;box-shadow:0 16px 32px rgba(0,0,0,.18);margin-bottom:14px}.royal-luxe-card h2{font-size:clamp(32px,3.9vw,58px);color:#6b1718;margin:8px 0 14px}.royal-luxe-card p:last-child,.royal-feature-card li{color:#6d4f47}.feature-chip{display:inline-flex;min-width:76px;height:42px;padding:0 16px;border-radius:999px;align-items:center;justify-content:center;background:linear-gradient(135deg,#ba242b,#7f1217);color:#fff3df;font-weight:900;letter-spacing:.08em;margin-bottom:16px}.royal-feature-card ul{margin:0;padding-left:18px;display:grid;gap:14px}.royal-feature-card li{line-height:1.7}
+@media (max-width:980px){.royal-luxe-grid{grid-template-columns:1fr}.royal-feature-card{padding:30px}body.variant-v13 .dragon-phoenix-banner span{font-size:22px}}
+@media (max-width:640px){.royal-luxe-card,.royal-feature-card{padding:28px}.royal-luxe-card h2{font-size:36px}.luxe-badge{width:66px;height:66px;font-size:34px}body.variant-v13 .crest-char{font-size:34px}}
+
+
+/* V14 Celestial Fantasy */
+body.variant-v14{background:radial-gradient(circle at 50% -8%, rgba(255,244,215,.30), transparent 22%), linear-gradient(180deg,#130609 0%,#231016 42%,#16070a 100%)}
+body.variant-v14 .gate-overlay{background:radial-gradient(circle at center, rgba(72,24,34,.18), rgba(7,1,2,.82))}
+body.variant-v14 .moon{background:radial-gradient(circle at 35% 35%,#fffdf6,#f7eacd 68%,rgba(247,234,205,.65) 100%);box-shadow:0 0 96px rgba(255,241,201,.34)}
+body.variant-v14 .moon-bridge{position:absolute;left:50%;top:102px;transform:translateX(-50%);width:min(760px,84vw);height:220px;border-top:2px solid rgba(255,240,198,.38);border-radius:50% 50% 0 0/100% 100% 0 0;opacity:.56;pointer-events:none}
+body.variant-v14 .moon-bridge::before{content:"";position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);width:180px;height:22px;border-radius:999px;background:radial-gradient(circle, rgba(255,242,211,.45), transparent 72%)}
+body.variant-v14 .celestial-wave{position:absolute;left:50%;top:92px;transform:translateX(-50%);width:min(900px,92vw);height:360px;pointer-events:none;background:radial-gradient(circle at 30% 40%, rgba(181,233,233,.12), transparent 32%), radial-gradient(circle at 70% 35%, rgba(255,230,182,.12), transparent 32%), radial-gradient(circle at 50% 80%, rgba(255,255,255,.10), transparent 40%);filter:blur(10px)}
+.spirit-lantern-field{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}.spirit-lantern{position:absolute;width:18px;height:28px;border-radius:10px 10px 14px 14px;background:linear-gradient(180deg, rgba(255,250,241,.94), rgba(233,219,186,.74));box-shadow:0 0 18px rgba(255,237,195,.28);opacity:.58;animation:spiritFloat ease-in-out infinite}.spirit-lantern::before{content:"";position:absolute;left:50%;transform:translateX(-50%);top:-5px;width:8px;height:5px;border-radius:4px;background:#e1bc6e}.spirit-lantern::after{content:"";position:absolute;left:50%;transform:translateX(-50%);bottom:-10px;width:2px;height:10px;background:linear-gradient(180deg,#e1bc6e, transparent)}@keyframes spiritFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-18px)}}
+body.variant-v14 .phoenix-crown{background:linear-gradient(180deg, rgba(255,248,233,.18), rgba(104,40,52,.18));border-color:rgba(244,231,196,.28)}
+body.variant-v14 .crest-char{color:#fff1cb;text-shadow:0 0 16px rgba(255,241,203,.26),0 12px 24px rgba(0,0,0,.18)}
+body.variant-v14 .dragon-phoenix-banner{background:linear-gradient(180deg,#b8212a,#76141a)}
+body.variant-v14 .forbidden-plaque{background:linear-gradient(180deg,#43140f,#281109)}
+body.variant-v14 .invitation-scroll{background:linear-gradient(180deg,#fff8ec,#f2dfb8)}
+.celestial-fantasy-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:24px}.fantasy-card,.fantasy-side-card{position:relative;padding:38px;border-radius:32px;background:linear-gradient(180deg,#fbf5e8,#f0e4c8);color:#4a201d;border:1px solid rgba(122,36,31,.12);box-shadow:0 24px 70px rgba(0,0,0,.18)}.fantasy-card::before,.fantasy-side-card::before{content:"";position:absolute;inset:16px;border-radius:22px;border:1px solid rgba(199,154,75,.22);pointer-events:none}.fantasy-badge{width:76px;height:76px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#fff6e4,#ddb46b);color:#8d1518;font-family:var(--serif);font-size:40px;margin-bottom:14px;box-shadow:0 14px 28px rgba(0,0,0,.16)}.fantasy-card h2{font-size:clamp(32px,3.9vw,58px);color:#6b1718;margin:8px 0 14px}.fantasy-card p:last-child{color:#6d4f47}.fantasy-side-card{display:grid;align-content:center;gap:16px;background:linear-gradient(180deg, rgba(255,248,233,.92), rgba(236,223,196,.92))}.fantasy-pill{display:inline-flex;min-height:54px;align-items:center;justify-content:center;border-radius:999px;padding:0 22px;background:linear-gradient(135deg,#fbf0d8,#dfbc78);color:#7c1518;font-weight:800;box-shadow:0 10px 24px rgba(0,0,0,.10)}
+@media (max-width:980px){.celestial-fantasy-grid{grid-template-columns:1fr}.fantasy-side-card{padding:30px}}
+@media (max-width:640px){.fantasy-card,.fantasy-side-card{padding:28px}.fantasy-card h2{font-size:36px}.fantasy-badge{width:66px;height:66px;font-size:34px}}
+
+
+/* BEST FINAL V13 + V14 Supreme */
+body.variant-best{background:radial-gradient(circle at 50% -8%, rgba(255,234,186,.30), transparent 22%), linear-gradient(180deg,#170406 0%,#2e0a0e 42%,#1a0407 100%)}
+body.variant-best .version-ribbon{background:linear-gradient(135deg,#f5e0b7,#d19b47);color:#7b1417;box-shadow:0 18px 36px rgba(0,0,0,.18)}
+body.variant-best .gate-overlay{background:radial-gradient(circle at center, rgba(114,18,24,.22), rgba(7,1,2,.84))}
+body.variant-best .phoenix-crown, body.variant-best .dragon-phoenix-banner{backdrop-filter:blur(3px)}
+body.variant-best .moon-bridge{opacity:.62} body.variant-best .royal-rays{opacity:.56} body.variant-best .celestial-wave{opacity:.78} body.variant-best .jade-orb{opacity:.62} body.variant-best .spirit-lantern{opacity:.54}
+body.variant-best .forbidden-plaque{box-shadow:0 16px 36px rgba(0,0,0,.26), inset 0 0 0 1px rgba(255,248,221,.08)}
+body.variant-best .invitation-scroll{box-shadow:0 30px 84px rgba(0,0,0,.24), inset 0 0 0 1px rgba(126,23,28,.10)}
+body.variant-best .open-btn{background:linear-gradient(135deg,#c1282f,#7f1016)}
+body.variant-best .royal-luxe-card, body.variant-best .fantasy-card, body.variant-best .fantasy-side-card, body.variant-best .royal-feature-card{box-shadow:0 26px 74px rgba(0,0,0,.18)}
+
+
+/* V15 Ultimate Masterpiece */
+.lotus-glow-field{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}.lotus-glow{position:absolute;width:44px;height:44px;border-radius:50%;background:radial-gradient(circle at 50% 50%, rgba(255,244,210,.76), rgba(255,212,135,.24) 42%, rgba(255,255,255,0) 75%);filter:blur(1px);opacity:.42;animation:lotusPulse ease-in-out infinite}@keyframes lotusPulse{0%,100%{transform:scale(.8);opacity:.24}50%{transform:scale(1.24);opacity:.58}}
+body.variant-v15{background:radial-gradient(circle at 50% -8%, rgba(255,236,190,.34), transparent 22%), linear-gradient(180deg,#150406 0%,#33090d 42%,#1b0407 100%)}
+body.variant-v15 .gate-overlay{background:radial-gradient(circle at center, rgba(132,20,28,.24), rgba(8,1,2,.88))}
+body.variant-v15 .royal-rays{opacity:.64;filter:blur(1px)} body.variant-v15 .moon-bridge{opacity:.72} body.variant-v15 .celestial-wave{opacity:.9} body.variant-v15 .jade-orb{opacity:.68} body.variant-v15 .spirit-lantern{opacity:.60}
+body.variant-v15 .phoenix-crown{box-shadow:0 30px 64px rgba(0,0,0,.28), inset 0 0 0 1px rgba(255,255,255,.10)}
+body.variant-v15 .dragon-phoenix-banner{box-shadow:0 28px 52px rgba(0,0,0,.28)}
+body.variant-v15 .invitation-scroll{box-shadow:0 34px 88px rgba(0,0,0,.26), inset 0 0 0 1px rgba(126,23,28,.10)}
+body.variant-v15 .open-btn{background:linear-gradient(135deg,#ca2b31,#7d0e15);box-shadow:0 18px 36px rgba(125,14,21,.34), inset 0 0 0 1px rgba(255,255,255,.16)}
+body.variant-v15 .version-ribbon{background:linear-gradient(135deg,#fff3d6,#d7a149);color:#7d1417}
+.ultimate-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:24px}.ultimate-card,.ultimate-side-card{position:relative;padding:38px;border-radius:32px;background:linear-gradient(180deg,#fbf5e8,#f1e1bc);color:#4a201d;border:1px solid rgba(122,36,31,.12);box-shadow:0 28px 80px rgba(0,0,0,.18)}.ultimate-card::before,.ultimate-side-card::before{content:"";position:absolute;inset:16px;border-radius:22px;border:1px solid rgba(199,154,75,.24);pointer-events:none}.ultimate-badge{width:82px;height:82px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#fff1d2,#d89e47);color:#8d1518;font-family:var(--serif);font-size:42px;margin-bottom:14px;box-shadow:0 16px 34px rgba(0,0,0,.18)}.ultimate-card h2{font-size:clamp(34px,4vw,60px);color:#6b1718;margin:8px 0 14px}.ultimate-card p:last-child{color:#6d4f47}.ultimate-side-card{display:grid;align-content:center;gap:16px}.ultimate-pill{display:inline-flex;min-height:54px;align-items:center;justify-content:center;border-radius:999px;padding:0 22px;background:linear-gradient(135deg,#c1272e,#7f1117);color:#fff3df;font-weight:900;letter-spacing:.03em;box-shadow:0 12px 26px rgba(0,0,0,.14)}
+@media (max-width:980px){.ultimate-grid{grid-template-columns:1fr}.ultimate-side-card{padding:30px}}
+@media (max-width:640px){.ultimate-card,.ultimate-side-card{padding:28px}.ultimate-card h2{font-size:36px}.ultimate-badge{width:68px;height:68px;font-size:34px}}
+
+
+/* V16 Supreme Mobile Luxe */
+body.variant-v16{background:radial-gradient(circle at 50% -8%, rgba(255,238,198,.36), transparent 22%), linear-gradient(180deg,#160406 0%,#35090d 42%,#1c0407 100%)}
+body.variant-v16 .version-ribbon{background:linear-gradient(135deg,#fff4da,#dba34b);color:#7f1418;box-shadow:0 18px 38px rgba(0,0,0,.18)}
+body.variant-v16 .topbar{box-shadow:0 18px 44px rgba(0,0,0,.24)}
+body.variant-v16 .hero-copy{position:relative}
+.v16-quick-badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.v16-badge{display:inline-flex;min-height:40px;align-items:center;justify-content:center;padding:0 16px;border-radius:999px;background:rgba(247,230,194,.10);border:1px solid rgba(245,218,163,.14);color:#f7e7c9;font-weight:800;font-size:14px;letter-spacing:0}
+.v16-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:24px}.v16-card,.v16-side-card{position:relative;padding:38px;border-radius:32px;background:linear-gradient(180deg,#fcf6e7,#f1e2bf);color:#4a201d;border:1px solid rgba(122,36,31,.12);box-shadow:0 28px 80px rgba(0,0,0,.18)}.v16-card::before,.v16-side-card::before{content:"";position:absolute;inset:16px;border-radius:22px;border:1px solid rgba(199,154,75,.24);pointer-events:none}.v16-badge-hero{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#fff1d4,#dba34b);color:#8d1518;font-family:var(--serif);font-size:38px;box-shadow:0 16px 34px rgba(0,0,0,.18);margin-bottom:14px}.v16-card h2{font-size:clamp(34px,4vw,60px);color:#6b1718;margin:8px 0 14px}.v16-card p:last-child{color:#6d4f47}.v16-side-card{display:grid;align-content:center;gap:16px}.v16-pill{display:inline-flex;min-height:54px;align-items:center;justify-content:center;border-radius:999px;padding:0 22px;background:linear-gradient(135deg,#c1272e,#7f1117);color:#fff3df;font-weight:900;letter-spacing:.03em;box-shadow:0 12px 26px rgba(0,0,0,.14)}
+.mobile-dock{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:40;width:min(760px,calc(100% - 20px));display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:10px;border-radius:24px;background:rgba(30,5,8,.88);border:1px solid rgba(245,218,163,.12);backdrop-filter:blur(14px);box-shadow:0 22px 52px rgba(0,0,0,.28)}.mobile-dock-btn{border:0;display:grid;place-items:center;min-height:58px;border-radius:18px;background:rgba(255,255,255,.06);color:#f7e8ca;font-weight:800;text-decoration:none;cursor:pointer}.mobile-dock-btn span{font-size:20px;line-height:1}.mobile-dock-btn small{margin-top:2px;font-size:12px}.mobile-dock-primary{background:linear-gradient(135deg,#c1272e,#7f1117);box-shadow:0 12px 26px rgba(0,0,0,.18)}
+body.variant-v16 .footer{padding-bottom:140px}
+@media (min-width:981px){.mobile-dock{width:min(560px,calc(100% - 20px));bottom:20px}}
+@media (max-width:980px){.v16-grid{grid-template-columns:1fr}.v16-side-card{padding:30px}}
+@media (max-width:640px){.v16-quick-badges{gap:8px}.v16-badge{font-size:12px;padding:0 12px;min-height:36px}.v16-card,.v16-side-card{padding:28px}.v16-card h2{font-size:36px}.v16-badge-hero{width:66px;height:66px;font-size:30px}.mobile-dock{bottom:10px;gap:8px;padding:8px;border-radius:18px}.mobile-dock-btn{min-height:52px;border-radius:14px}.mobile-dock-btn span{font-size:18px}.mobile-dock-btn small{font-size:11px}}
+
+
+/* ONLY ONE FINAL */
+body.variant-final{background:radial-gradient(circle at 50% -8%, rgba(255,238,198,.36), transparent 22%), linear-gradient(180deg,#140406 0%,#33090d 42%,#1a0407 100%)}
+body.variant-final .version-ribbon{background:linear-gradient(135deg,#fff4da,#dca44a);color:#7f1418;letter-spacing:.05em}
+body.variant-final .v16-badge{background:rgba(247,230,194,.10);border-color:rgba(245,218,163,.15)}
+.signature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.signature-card{position:relative;padding:34px;border-radius:28px;background:linear-gradient(180deg,#fcf6e8,#f0dfbc);color:#4a201d;border:1px solid rgba(122,36,31,.12);box-shadow:0 24px 70px rgba(0,0,0,.18)}.signature-card::before{content:"";position:absolute;inset:16px;border-radius:20px;border:1px solid rgba(199,154,75,.24);pointer-events:none}.signature-icon{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#fff1d3,#d99f49);color:#8d1518;font-family:var(--serif);font-size:36px;box-shadow:0 14px 30px rgba(0,0,0,.18);margin-bottom:14px}.signature-card h3{font-size:32px;color:#6b1718;margin-bottom:10px;font-family:var(--serif)}.signature-card p{color:#6d4f47}
+@media (max-width:980px){.signature-grid{grid-template-columns:1fr}}\n@media (max-width:640px){.signature-card{padding:28px}.signature-card h3{font-size:28px}.signature-icon{width:62px;height:62px;font-size:30px}}

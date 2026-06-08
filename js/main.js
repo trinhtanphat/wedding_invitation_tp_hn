@@ -44,6 +44,11 @@ const nav=$('#nav'), navToggle=$('#navToggle'), topbar=$('#topbar'); window.addE
 const observer = new IntersectionObserver(entries=>entries.forEach(entry=>{ if(entry.isIntersecting) entry.target.classList.add('visible'); }),{threshold:.14}); $$('.reveal').forEach(el=>observer.observe(el));
 const petalField=$('#petalField'); for(let i=0;i<32;i++){ const p=document.createElement('span'); p.className='petal'; p.style.left=`${Math.random()*100}vw`; p.style.animationDuration=`${9+Math.random()*12}s`; p.style.animationDelay=`${-Math.random()*12}s`; p.style.setProperty('--drift',`${Math.random()*220-110}px`); p.style.transform=`scale(${0.55+Math.random()*0.9})`; petalField?.appendChild(p); }
 const sparkField=$('#sparkField'); for(let i=0;i<42;i++){ const s=document.createElement('span'); s.className='spark'; s.style.left=`${Math.random()*100}vw`; s.style.top=`${Math.random()*100}vh`; s.style.animationDuration=`${2.8+Math.random()*3.8}s`; s.style.animationDelay=`${Math.random()*4}s`; sparkField?.appendChild(s); }
+const starField=$('#starField');
+for(let i=0;i<56;i++){ const s=document.createElement('span'); s.className='star-dot'; s.style.left=`${Math.random()*100}vw`; s.style.top=`${Math.random()*46}vh`; s.style.animationDuration=`${1.8+Math.random()*4.2}s`; s.style.animationDelay=`${Math.random()*4}s`; starField?.appendChild(s); }
+const jadeOrbField=$('#jadeOrbField');
+for(let i=0;i<18;i++){ const o=document.createElement('span'); o.className='jade-orb'; const size=12+Math.random()*26; o.style.width=`${size}px`; o.style.height=`${size}px`; o.style.left=`${Math.random()*100}vw`; o.style.top=`${20+Math.random()*70}vh`; o.style.animationDuration=`${6+Math.random()*8}s`; o.style.animationDelay=`${Math.random()*4}s`; o.style.setProperty('--dx',`${Math.random()*50-25}px`); jadeOrbField?.appendChild(o); }
+
 function updateCountdown(){ const box=$('#countdown'); if(!box) return; const target=new Date(box.dataset.date).getTime(), diff=Math.max(0,target-Date.now()); $('#days').textContent=String(Math.floor(diff/86400000)).padStart(2,'0'); $('#hours').textContent=String(Math.floor(diff/3600000)%24).padStart(2,'0'); $('#minutes').textContent=String(Math.floor(diff/60000)%60).padStart(2,'0'); $('#seconds').textContent=String(Math.floor(diff/1000)%60).padStart(2,'0'); }
 updateCountdown(); setInterval(updateCountdown,1000);
 
@@ -67,3 +72,11 @@ const modal=$('#photoModal'), modalImage=$('#modalImage'); $$('.gallery-item').f
 function escapeHtml(str){ return str.replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c])); }
 $('#wishForm')?.addEventListener('submit',e=>{ e.preventDefault(); const data=new FormData(e.currentTarget), name=String(data.get('name')||'').trim(), message=String(data.get('message')||'').trim(); if(!name||!message) return; const wish=document.createElement('div'); wish.className='wish'; wish.innerHTML=`<strong>${escapeHtml(name)}</strong><p>${escapeHtml(message)}</p>`; $('#wishList').prepend(wish); e.currentTarget.reset(); toast(t('toastWish')); });
 $('#rsvpForm')?.addEventListener('submit',e=>{ e.preventDefault(); const data=Object.fromEntries(new FormData(e.currentTarget).entries()); localStorage.setItem('wedding-rsvp-demo',JSON.stringify({...data,createdAt:new Date().toISOString()})); e.currentTarget.reset(); toast(t('toastRsvp')); });
+
+const spiritLanternField=$('#spiritLanternField');
+for(let i=0;i<16;i++){ const l=document.createElement('span'); l.className='spirit-lantern'; l.style.left=`${Math.random()*100}vw`; l.style.top=`${10+Math.random()*75}vh`; l.style.animationDuration=`${5+Math.random()*7}s`; l.style.animationDelay=`${Math.random()*4}s`; spiritLanternField?.appendChild(l); }
+
+const lotusGlowField=$('#lotusGlowField');
+for(let i=0;i<14;i++){ const g=document.createElement('span'); g.className='lotus-glow'; const size=28+Math.random()*34; g.style.width=`${size}px`; g.style.height=`${size}px`; g.style.left=`${Math.random()*100}vw`; g.style.top=`${55+Math.random()*40}vh`; g.style.animationDuration=`${4+Math.random()*5}s`; g.style.animationDelay=`${Math.random()*4}s`; lotusGlowField?.appendChild(g); }
+
+$('#dockMusic')?.addEventListener('click', async()=>{ if(!audio) return; state.wantsMusic = audio.paused; if(state.wantsMusic){ await playMusic(true); if(!audio.paused) toast(t('toastMusicOn')); } else pauseMusic(true); });
