@@ -1,22 +1,46 @@
-# Wedding Invitation - Tan Phat & Hong Ngoc
+# Wedding Invitation - Ancient Chinese V4
 
-Ban cap nhat moi da fix lai typography de chu khong bi roi rac, dong thoi bo sung:
-- Hieu ung rem mo / dong rem 3D.
-- Bieu tuong Song Hy (囍) trang tri.
-- Hieu ung parallax nhe cho khung anh.
-- Giao dien dep hon cho mobile.
+Ban nay da duoc fix lai theo yeu cau:
+- Sua lai logic mo cong / mo rem de khong bi loi.
+- UI/UX duoc redesign co phong hon, dam chat Trung Hoa co trang.
+- Giam letter-spacing de chu khong bi roi rac.
+- Ho tro i18n 3 ngon ngu: Tieng Viet / English / 中文.
+- Khi bam "Mo thiep" se thu phat nhac tu file: assets/music/wedding-song.mp3
 
-## Thong tin tam gia dinh hien tai
+## Luu y ve nhac
+De tranh van de ban quyen, file MP3 khong duoc dinh kem san.
+Ban chi can dat file nhac vao:
+assets/music/wedding-song.mp3
+
+## Thong tin tam gia dinh
 - Ngay cuoi: Chu nhat, 22/11/2026
 - Gio: 17:30 - 18:00
-- Dia diem le thanh hon: Tu gia nha gai, Tan Binh, TP.HCM
-- Dia diem tiec cuoi: White Palace Hoang Van Thu, 194 Hoang Van Thu, Phu Nhuan, TP.HCM
+- Le thanh hon: Tu gia nha gai, Tan Binh, TP.HCM
+- Tiec cuoi: White Palace Hoang Van Thu, 194 Hoang Van Thu, Phu Nhuan, TP.HCM
 
-## Cach sua nhanh
-- Mo `index.html` va tim cac noi dung ngay, gio, dia diem, ten co dau chu re.
-- Neu muon doi so dien thoai RSVP, sua trong section `RSVP`.
-- Neu muon doi anh, thay file trong `assets/` va giu nguyen ten file, hoac sua lai duong dan trong `index.html`.
+## Chay web
+- Giai nen file zip
+- Mo file index.html bang trinh duyet
 
-## Chay website
-- Giai nen file zip.
-- Mo `index.html` bang trinh duyet.
+
+## V5 nang cap them
+- Them cong son co trang kieu cung dinh: mai cong, hoanh phi, cau doi bay vao, cua go song hy.
+- Them hieu ung an trien (stamp punch) khi mo thiep.
+- Them phao hoa vang do luc mo cong.
+- Them section co phong moi: cau doi / thu cuon / poem card.
+- Them nen cung dien xa, suong, nui, den long, hoa roi va hat sang.
+- Fix tiep letter-spacing cho chu Viet/Anh/Trung de khong bi roi rac.
+
+
+V6 update:
+- Redesign lai cong cung dinh dep hon.
+- Bo sung nut mo cong ro rang, de nhin thay va de bam hon.
+
+
+V7 update:
+- Nang cap cong theo huong Tu Cam Thanh + tien hiep mong ao.
+- Toan bo canh cua co the bam de mo, dong thoi giu nut mo lon ben duoi.
+- Them hieu ung rong anh sang, suong tien hiep, mai cong nhieu lop, cot son vang.
+
+
+V9 update: Immortal Dream xianxia style, moon palace glow, teal-jade mist, celestial effects, still keeps VI/EN/简中/繁中.
