@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7eee6" />
+  <meta name="description" content="Thiệp cưới online của Tấn Phát và Hồng Ngọc" />
+  <title>Tấn Phát & Hồng Ngọc — Wedding Invitation</title>
+  <link rel="icon" href="assets/heart.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="curtain-closed">
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-mark">TP<span>&</span>HN</div>
+    <p>Đang chuẩn bị thiệp mời...</p>
+  </div>
+
+  <div class="curtain-scene" id="curtainScene" aria-label="Hiệu ứng mở thiệp">
+    <div class="curtain-panel left"></div>
+    <div class="curtain-panel right"></div>
+    <div class="curtain-center-card">
+      <div class="double-happiness large">囍</div>
+      <span class="curtain-label">Wedding invitation</span>
+      <h2>Tấn Phát &amp; Hồng Ngọc</h2>
+      <p>Một tấm thiệp nhỏ cho ngày hạnh phúc lớn.</p>
+      <button class="curtain-action" id="curtainAction" type="button">Mở thiệp</button>
+    </div>
+  </div>
+
+  <button class="curtain-replay" id="curtainReplay" type="button" aria-label="Đóng hoặc mở rèm">Đóng rèm</button>
+
+  <div class="ambient ambient-1"></div>
+  <div class="ambient ambient-2"></div>
+  <div class="petal-field" id="petalField" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#home" aria-label="Về đầu trang">TP <span>&</span> HN</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="#story">Câu chuyện</a>
+      <a href="#event">Thông tin</a>
+      <a href="#timeline">Lịch trình</a>
+      <a href="#gallery">Ảnh cưới</a>
+      <a class="nav-cta" href="#rsvp">Xác nhận</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section" aria-labelledby="heroTitle">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="hero-ornament">
+            <div class="double-happiness">囍</div>
+            <div>
+              <small>Song Hỷ</small>
+              <strong>Phu thê viên mãn</strong>
+            </div>
+          </div>
+          <p class="eyebrow">Wedding Invitation</p>
+          <h1 id="heroTitle">Tấn Phát <span>&</span><br /> Hồng Ngọc</h1>
+          <p class="hero-note">Trân trọng kính mời bạn đến chung vui trong ngày hạnh phúc của chúng tôi.</p>
+          <div class="hero-date">
+            <span>Chủ nhật</span>
+            <strong>22.11.2026</strong>
+            <span>17:30</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn primary" href="#event">Xem địa điểm</a>
+            <a class="btn ghost" href="wedding.ics" download>Thêm vào lịch</a>
+          </div>
+        </div>
+
+        <div class="hero-photo-wrap reveal delay-1" id="heroPhotoWrap">
+          <div class="photo-glow"></div>
+          <div class="photo-corner-symbol">囍</div>
+          <picture>
+            <source srcset="assets/couple.webp" type="image/webp" />
+            <img class="hero-photo" src="assets/couple.jpg" alt="Ảnh cưới của Tấn Phát và Hồng Ngọc" />
+          </picture>
+          <div class="photo-caption">Save the date</div>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#intro" aria-label="Cuộn xuống">Cuộn xuống <span></span></a>
+    </section>
+
+    <section class="intro section" id="intro">
+      <div class="container narrow reveal">
+        <span class="section-kicker">With love</span>
+        <h2>Một ngày đặc biệt, một lời mời thật chân thành.</h2>
+        <p>
+          Tình yêu đẹp nhất là khi có gia đình, bạn bè và những người thân thương cùng chứng kiến.
+          Sự hiện diện của bạn là niềm vinh hạnh và là món quà quý giá nhất dành cho Tấn Phát &amp; Hồng Ngọc.
+        </p>
+      </div>
+    </section>
+
+    <section class="countdown section compact" aria-labelledby="countdownTitle">
+      <div class="container reveal">
+        <span class="section-kicker">Counting down</span>
+        <h2 id="countdownTitle">Đếm ngược đến ngày cưới</h2>
+        <div class="countdown-grid" id="countdown" data-date="2026-11-22T17:30:00+07:00">
+          <div><strong id="days">00</strong><span>Ngày</span></div>
+          <div><strong id="hours">00</strong><span>Giờ</span></div>
+          <div><strong id="minutes">00</strong><span>Phút</span></div>
+          <div><strong id="seconds">00</strong><span>Giây</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="container story-grid">
+        <div class="story-card reveal">
+          <span class="section-kicker">Our story</span>
+          <h2>Chúng tôi đã chọn cùng nhau đi tiếp.</h2>
+          <p>
+            Từ những ngày đầu giản dị đến khoảnh khắc quyết định xây dựng một mái ấm,
+            chúng tôi biết rằng hành trình này sẽ trọn vẹn hơn khi được chia sẻ cùng những người mình yêu quý.
+          </p>
+          <div class="signature">Tấn Phát &amp; Hồng Ngọc</div>
+        </div>
+        <div class="quote-card reveal delay-1">
+          <div class="quote-mark">“</div>
+          <p>Love is not about how many days we have been together, but how beautifully we choose each other every day.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="event section" id="event">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Wedding day</span>
+          <h2>Thông tin lễ cưới</h2>
+          <p>Thời gian và địa điểm đang để giả định, có thể chỉnh lại trong file HTML rất nhanh.</p>
+        </div>
+        <div class="event-cards">
+          <article class="event-card reveal">
+            <div class="event-icon">💍</div>
+            <h3>Lễ thành hôn</h3>
+            <p class="event-time">17:30 — Chủ nhật, 22/11/2026</p>
+            <p>Tư gia nhà gái<br />Tân Bình, Thành phố Hồ Chí Minh</p>
+          </article>
+          <article class="event-card featured reveal delay-1">
+            <div class="event-icon">🥂</div>
+            <h3>Tiệc cưới</h3>
+            <p class="event-time">18:00 — Chủ nhật, 22/11/2026</p>
+            <p>White Palace Hoàng Văn Thụ<br />194 Hoàng Văn Thụ, Phú Nhuận, TP.HCM</p>
+            <a class="text-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=White+Palace+Hoang+Van+Thu+194+Hoang+Van+Thu+Phu+Nhuan+Ho+Chi+Minh">Mở bản đồ</a>
+          </article>
+          <article class="event-card reveal delay-2">
+            <div class="event-icon">🎀</div>
+            <h3>Dress code</h3>
+            <p class="event-time">White · Beige · Champagne</p>
+            <p>Trang phục thanh lịch, gam màu nhẹ nhàng để cùng tạo nên khung hình thật đẹp.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline section" id="timeline">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Schedule</span>
+          <h2>Lịch trình dự kiến</h2>
+        </div>
+        <div class="timeline-list">
+          <div class="timeline-item reveal"><time>17:00</time><div><h3>Đón khách</h3><p>Chụp ảnh, ký tên lưu niệm và dùng tiệc nhẹ.</p></div></div>
+          <div class="timeline-item reveal"><time>17:30</time><div><h3>Nghi thức cưới</h3><p>Khoảnh khắc trao nhẫn và lời chúc phúc từ hai bên gia đình.</p></div></div>
+          <div class="timeline-item reveal"><time>18:00</time><div><h3>Khai tiệc</h3><p>Dùng bữa tối cùng gia đình, bạn bè và người thân.</p></div></div>
+          <div class="timeline-item reveal"><time>19:30</time><div><h3>Chung vui</h3><p>Nâng ly, âm nhạc và những bức ảnh thật đáng nhớ.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Gallery</span>
+          <h2>Khoảnh khắc của chúng tôi</h2>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-item big reveal" data-img="assets/couple-original.jpg" aria-label="Mở ảnh cưới 1"><img src="assets/couple.jpg" alt="Ảnh cưới 1" /></button>
+          <button class="gallery-item reveal delay-1" data-img="assets/couple-original.jpg" aria-label="Mở ảnh cưới 2"><img src="assets/couple.jpg" alt="Ảnh cưới 2" /></button>
+          <button class="gallery-item reveal delay-2" data-img="assets/couple-original.jpg" aria-label="Mở ảnh cưới 3"><img src="assets/couple.jpg" alt="Ảnh cưới 3" /></button>
+          <button class="gallery-item wide reveal delay-3" data-img="assets/couple-original.jpg" aria-label="Mở ảnh cưới 4"><img src="assets/couple.jpg" alt="Ảnh cưới 4" /></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="wishes section">
+      <div class="container wishes-card reveal">
+        <span class="section-kicker">Best wishes</span>
+        <h2>Gửi lời chúc đến cô dâu chú rể</h2>
+        <p>Những lời chúc của bạn sẽ là kỷ niệm thật đẹp trong ngày trọng đại này.</p>
+        <form class="wish-form" id="wishForm">
+          <input type="text" name="name" placeholder="Tên của bạn" required />
+          <textarea name="message" rows="4" placeholder="Lời chúc..." required></textarea>
+          <button class="btn primary" type="submit">Gửi lời chúc</button>
+        </form>
+        <div class="wish-list" id="wishList" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="rsvp section" id="rsvp">
+      <div class="container rsvp-grid">
+        <div class="rsvp-copy reveal">
+          <span class="section-kicker">RSVP</span>
+          <h2>Bạn sẽ đến chung vui chứ?</h2>
+          <p>Vui lòng xác nhận trước ngày 10/11/2026 để chúng tôi chuẩn bị chu đáo hơn.</p>
+          <div class="contact-card">
+            <strong>Liên hệ</strong>
+            <span>Tấn Phát: 09xx xxx xxx</span>
+            <span>Hồng Ngọc: 09xx xxx xxx</span>
+          </div>
+        </div>
+        <form class="rsvp-form reveal delay-1" id="rsvpForm">
+          <label>Họ và tên<input type="text" name="guest" placeholder="Nhập tên của bạn" required /></label>
+          <label>Số khách tham dự<select name="guests"><option>1 khách</option><option>2 khách</option><option>3 khách</option><option>4 khách</option></select></label>
+          <label>Phản hồi<select name="status"><option>Tôi sẽ tham dự</option><option>Rất tiếc, tôi không tham dự được</option></select></label>
+          <label>Lời nhắn<textarea name="note" rows="3" placeholder="Lời nhắn thêm..."></textarea></label>
+          <button class="btn primary full" type="submit">Xác nhận tham dự</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-monogram">TP <span>&</span> HN</div>
+    <div class="footer-double-happiness">囍</div>
+    <p>Thank you for being part of our love story.</p>
+    <small>Designed with love for Tấn Phát &amp; Hồng Ngọc.</small>
+  </footer>
+
+  <dialog class="modal" id="photoModal">
+    <button class="modal-close" id="modalClose" aria-label="Đóng ảnh">×</button>
+    <img id="modalImage" src="" alt="Ảnh cưới phóng to" />
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

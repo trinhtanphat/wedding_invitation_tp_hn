@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Tan Phat Hong Ngoc Wedding//VI
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:tanphat-hongngoc-wedding-20261122@example.com
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=Asia/Ho_Chi_Minh:20261122T173000
+DTEND;TZID=Asia/Ho_Chi_Minh:20261122T213000
+SUMMARY:Đám cưới Tấn Phát & Hồng Ngọc
+LOCATION:White Palace Hoàng Văn Thụ, 194 Hoàng Văn Thụ, Phú Nhuận, TP.HCM
+DESCRIPTION:Trân trọng kính mời bạn đến chung vui cùng Tấn Phát và Hồng Ngọc.
+END:VEVENT
+END:VCALENDAR
