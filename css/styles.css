@@ -528,3 +528,170 @@ body.variant-final .version-ribbon{background:linear-gradient(135deg,#fff4da,#dc
 body.variant-final .v16-badge{background:rgba(247,230,194,.10);border-color:rgba(245,218,163,.15)}
 .signature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.signature-card{position:relative;padding:34px;border-radius:28px;background:linear-gradient(180deg,#fcf6e8,#f0dfbc);color:#4a201d;border:1px solid rgba(122,36,31,.12);box-shadow:0 24px 70px rgba(0,0,0,.18)}.signature-card::before{content:"";position:absolute;inset:16px;border-radius:20px;border:1px solid rgba(199,154,75,.24);pointer-events:none}.signature-icon{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#fff1d3,#d99f49);color:#8d1518;font-family:var(--serif);font-size:36px;box-shadow:0 14px 30px rgba(0,0,0,.18);margin-bottom:14px}.signature-card h3{font-size:32px;color:#6b1718;margin-bottom:10px;font-family:var(--serif)}.signature-card p{color:#6d4f47}
 @media (max-width:980px){.signature-grid{grid-template-columns:1fr}}\n@media (max-width:640px){.signature-card{padding:28px}.signature-card h3{font-size:28px}.signature-icon{width:62px;height:62px;font-size:30px}}
+
+
+/* FINAL PLUS - Aurora-inspired layout additions */
+.family-grid,.invite-grid,.gift-grid,.calendar-map-grid{display:grid;gap:22px}
+.family-grid{grid-template-columns:repeat(2,1fr)}
+.family-card,.invite-card,.gift-card,.calendar-card,.map-card{
+  position:relative;padding:34px;border-radius:28px;
+  background:linear-gradient(180deg,#fcf6e8,#f0dfbc);
+  color:#4a201d;border:1px solid rgba(122,36,31,.12);
+  box-shadow:0 24px 70px rgba(0,0,0,.18);overflow:hidden
+}
+.family-card::before,.invite-card::before,.gift-card::before,.calendar-card::before,.map-card::before{
+  content:"";position:absolute;inset:16px;border-radius:20px;
+  border:1px solid rgba(199,154,75,.24);pointer-events:none
+}
+.family-seal,.invite-top,.qr-placeholder{
+  width:72px;height:72px;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(145deg,#fff1d3,#d99f49);color:#8d1518;
+  font-family:var(--serif);font-size:34px;box-shadow:0 14px 30px rgba(0,0,0,.16);margin-bottom:14px
+}
+.family-label{font-weight:900;color:#8d1518;text-transform:uppercase;letter-spacing:.04em;font-size:13px;margin-bottom:8px}
+.family-card h3,.invite-card h3,.gift-card h3{font-size:32px;color:#6b1718;margin-bottom:10px;font-family:var(--serif)}
+.family-card p,.invite-card p,.gift-card p,.calendar-card p,.map-card p{color:#6d4f47}
+.invite-grid{grid-template-columns:repeat(3,1fr)}
+.invite-card.featured{background:linear-gradient(180deg,#fff6e8,#efd8ad);transform:translateY(-8px)}
+.invite-time{font-weight:900;color:#8d1518!important}
+.btn.small{min-height:42px;padding:0 18px;margin-top:14px}
+.calendar-map-grid{grid-template-columns:.95fr 1.05fr}
+.mini-calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin:20px 0 14px}
+.mini-calendar span,.mini-calendar i,.mini-calendar b,.mini-calendar strong{
+  min-height:48px;border-radius:14px;display:grid;place-items:center;
+  background:rgba(255,255,255,.55);font-style:normal;color:#6d4f47;font-weight:800
+}
+.mini-calendar span{background:rgba(141,21,24,.08);color:#8d1518;font-size:12px}
+.mini-calendar b{background:rgba(199,154,75,.22);color:#7d1417}
+.mini-calendar strong{background:linear-gradient(135deg,#c1272e,#7f1117);color:#fff3df;box-shadow:0 12px 26px rgba(127,17,23,.2)}
+.map-placeholder{
+  min-height:220px;border-radius:24px;display:grid;place-items:center;text-align:center;
+  background:
+    linear-gradient(135deg,rgba(127,17,23,.12),rgba(199,154,75,.18)),
+    radial-gradient(circle at 30% 30%,rgba(255,255,255,.65),transparent 30%);
+  border:1px dashed rgba(127,17,23,.22);margin-top:18px
+}
+.map-placeholder span{font-family:var(--serif);font-size:56px;color:#8d1518}.map-placeholder small{display:block;color:#6d4f47;font-weight:800}
+.gift-grid{grid-template-columns:repeat(2,1fr);max-width:840px;margin:0 auto}
+.qr-placeholder{width:132px;height:132px;border-radius:28px;margin:0 auto 18px;background:
+  linear-gradient(90deg,#4a201d 12px,transparent 12px 24px,#4a201d 24px 36px,transparent 36px),
+  linear-gradient(180deg,#fff6e8,#f0dfbc);font-size:28px}
+.gift-card{text-align:center}
+.wish-suggestions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:20px 0 10px}
+.wish-suggestions button{
+  border:1px solid rgba(122,36,31,.14);border-radius:999px;background:rgba(255,255,255,.62);
+  color:#7d1417;font-weight:800;padding:10px 14px;cursor:pointer
+}
+.wish-suggestions button:hover{background:#fff;transform:translateY(-1px)}
+@media (max-width:980px){
+  .family-grid,.invite-grid,.calendar-map-grid,.gift-grid{grid-template-columns:1fr}
+  .invite-card.featured{transform:none}
+}
+@media (max-width:640px){
+  .family-card,.invite-card,.gift-card,.calendar-card,.map-card{padding:28px}
+  .family-card h3,.invite-card h3,.gift-card h3{font-size:28px}
+  .mini-calendar span,.mini-calendar i,.mini-calendar b,.mini-calendar strong{min-height:38px;border-radius:10px;font-size:12px}
+  .map-placeholder{min-height:170px}
+  .qr-placeholder{width:112px;height:112px}
+}
+
+
+/* Dragon & Phoenix image enhancement */
+.art-crown{padding:10px 10px 16px;gap:8px;overflow:hidden}
+.art-crown .crown-art{position:relative;z-index:2;display:block;width:100%;height:146px;object-fit:cover;object-position:center;border-radius:24px 24px 18px 18px;border:1px solid rgba(255,228,176,.22);box-shadow:0 10px 24px rgba(0,0,0,.18)}
+body.variant-v12 .art-crown small, body.variant-v13 .art-crown small, body.variant-v14 .art-crown small, body.variant-v15 .art-crown small, body.variant-v16 .art-crown small, body.variant-final .art-crown small{position:relative;z-index:2;margin-top:2px;font-family:var(--serif);font-size:20px;letter-spacing:.08em;color:#fbe8bf;text-shadow:0 4px 12px rgba(0,0,0,.24)}
+.art-crown b{top:24px}.art-crown i{top:56px}
+body.variant-v12 .dragon-phoenix-banner span, body.variant-v13 .dragon-phoenix-banner span, body.variant-v14 .dragon-phoenix-banner span, body.variant-v15 .dragon-phoenix-banner span, body.variant-v16 .dragon-phoenix-banner span, body.variant-final .dragon-phoenix-banner span{font-size:28px;letter-spacing:.04em}
+@media (max-width:1180px){.art-crown .crown-art{height:118px}body.variant-v12 .art-crown small, body.variant-v13 .art-crown small, body.variant-v14 .art-crown small, body.variant-v15 .art-crown small, body.variant-v16 .art-crown small, body.variant-final .art-crown small{font-size:16px}}
+@media (max-width:980px){.art-crown{padding:8px 8px 12px}.art-crown .crown-art{height:86px;border-radius:18px 18px 12px 12px}.art-crown b{top:18px}.art-crown i{top:38px}body.variant-v12 .art-crown small, body.variant-v13 .art-crown small, body.variant-v14 .art-crown small, body.variant-v15 .art-crown small, body.variant-v16 .art-crown small, body.variant-final .art-crown small{font-size:12px}.dragon-phoenix-banner span{font-size:18px}}
+@media (max-width:640px){.art-crown{top:88px;padding:6px 6px 8px}.art-crown .crown-art{height:64px;border-radius:14px 14px 10px 10px}.art-crown small{font-size:10px !important;letter-spacing:.04em}.dragon-phoenix-banner{display:block !important;width:56px !important;min-height:94px !important;padding:10px 4px !important;top:220px !important}.dragon-phoenix-banner span{font-size:14px !important}}
+
+
+/* Premium blend upgrade for dragon-phoenix art */
+body.variant-final .gate-stage{filter:drop-shadow(0 34px 70px rgba(0,0,0,.34))}
+body.variant-final .gate-glow{background:radial-gradient(circle, rgba(246,226,186,.24), rgba(208,66,58,.08) 34%, transparent 72%);filter:blur(10px)}
+body.variant-final .art-crown{
+  padding:12px 12px 18px;
+  border:1px solid rgba(255,229,178,.18);
+  background:
+    radial-gradient(circle at 50% 28%, rgba(255,238,204,.18), transparent 42%),
+    linear-gradient(180deg, rgba(255,255,255,.08), rgba(126,19,25,.10)),
+    linear-gradient(180deg, rgba(248,227,177,.16), rgba(153,27,31,.16));
+  box-shadow:0 26px 54px rgba(0,0,0,.24), inset 0 0 0 1px rgba(255,255,255,.05);
+  backdrop-filter:blur(6px) saturate(112%);
+}
+body.variant-final .art-crown::before{
+  content:"";position:absolute;inset:16px 16px auto 16px;height:162px;border-radius:28px 28px 22px 22px;
+  background:radial-gradient(circle at 50% 22%, rgba(255,243,220,.26), transparent 55%), linear-gradient(180deg, rgba(126,19,25,.08), rgba(126,19,25,0));
+  pointer-events:none;z-index:2;mix-blend-mode:screen;
+}
+body.variant-final .art-crown::after{
+  content:"";position:absolute;inset:14px;border-radius:32px 32px 24px 24px;
+  border:1px solid rgba(255,229,178,.18);box-shadow:inset 0 0 0 1px rgba(255,255,255,.04);
+  pointer-events:none;z-index:1;
+}
+body.variant-final .art-crown .crown-art{
+  height:152px;border-radius:26px 26px 18px 18px;
+  border:1px solid rgba(255,235,198,.28);
+  box-shadow:0 14px 28px rgba(0,0,0,.20), 0 0 0 6px rgba(125,18,24,.08);
+  filter:saturate(1.05) contrast(1.03) brightness(1.02);
+  opacity:.98;
+}
+body.variant-final .art-crown small{
+  display:inline-flex;align-items:center;justify-content:center;align-self:center;
+  min-height:34px;padding:0 16px;margin-top:6px;border-radius:999px;
+  background:linear-gradient(135deg, rgba(255,240,207,.18), rgba(191,142,65,.18));
+  border:1px solid rgba(255,231,188,.14);
+  box-shadow:0 8px 20px rgba(0,0,0,.16);
+}
+body.variant-final .art-crown b{top:28px;border-color:rgba(255,229,169,.26)}
+body.variant-final .art-crown i{top:62px;border-color:rgba(220,159,74,.28)}
+body.variant-final .dragon-phoenix-banner{
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,0)),
+    linear-gradient(180deg,#bb1f26,#730d12);
+  border:2px solid rgba(244,216,156,.38);
+  box-shadow:0 24px 50px rgba(0,0,0,.24), inset 0 0 0 1px rgba(255,245,221,.04);
+}
+body.variant-final .dragon-phoenix-banner::before{
+  content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);width:52px;height:10px;border-radius:999px;
+  background:linear-gradient(90deg, transparent, rgba(255,236,194,.68), transparent);opacity:.9;
+}
+body.variant-final .dragon-phoenix-banner span{
+  color:#fdebcf;text-shadow:0 6px 16px rgba(0,0,0,.28), 0 0 12px rgba(255,226,168,.16);
+  font-size:30px;letter-spacing:.05em;
+}
+body.variant-final .forbidden-plaque{
+  background:linear-gradient(180deg,#50150f,#2b1008);
+  box-shadow:0 18px 34px rgba(0,0,0,.28), inset 0 0 0 1px rgba(255,243,219,.06);
+}
+body.variant-final .invitation-scroll{
+  background:linear-gradient(180deg,#fff8ed,#f2deb5);
+  box-shadow:0 34px 92px rgba(0,0,0,.28), inset 0 0 0 1px rgba(126,23,28,.09);
+}
+body.variant-final .invitation-scroll::before, body.variant-final .invitation-scroll::after{opacity:.9}
+body.variant-final .gate-copy{max-width:34ch;margin-inline:auto;color:#6a4b44}
+body.variant-final .open-btn{box-shadow:0 18px 38px rgba(111,17,21,.34), inset 0 0 0 1px rgba(255,255,255,.16)}
+body.variant-final .gate-open-hint p{font-weight:700;letter-spacing:.03em}
+body.variant-final .tap-arrow{animation:bounceArrow 1.6s ease-in-out infinite}
+@keyframes bounceArrow{0%,100%{transform:translateY(0);opacity:.65}50%{transform:translateY(6px);opacity:1}}
+body.variant-final .tap-glow{position:absolute;left:50%;top:-2px;transform:translateX(-50%);width:180px;height:50px;border-radius:50%;background:radial-gradient(circle, rgba(255,225,169,.22), transparent 68%);pointer-events:none;z-index:-1}
+@media (max-width:1180px){
+  body.variant-final .art-crown .crown-art{height:124px}
+  body.variant-final .dragon-phoenix-banner span{font-size:24px}
+}
+@media (max-width:980px){
+  body.variant-final .art-crown{padding:8px 8px 12px}
+  body.variant-final .art-crown::before{inset:10px 10px auto 10px;height:98px;border-radius:20px 20px 14px 14px}
+  body.variant-final .art-crown .crown-art{height:90px;border-radius:18px 18px 12px 12px;box-shadow:0 10px 22px rgba(0,0,0,.18), 0 0 0 4px rgba(125,18,24,.08)}
+  body.variant-final .art-crown small{min-height:26px;padding:0 10px;margin-top:4px}
+  body.variant-final .dragon-phoenix-banner span{font-size:18px}
+}
+@media (max-width:640px){
+  body.variant-final .art-crown{top:86px;padding:6px 6px 9px;border-radius:32px 32px 16px 16px}
+  body.variant-final .art-crown::before{inset:8px 8px auto 8px;height:72px;border-radius:14px 14px 10px 10px}
+  body.variant-final .art-crown .crown-art{height:68px;border-radius:14px 14px 10px 10px}
+  body.variant-final .art-crown small{min-height:22px;padding:0 8px;font-size:9px !important}
+  body.variant-final .dragon-phoenix-banner{width:58px !important;min-height:96px !important;top:220px !important}
+  body.variant-final .dragon-phoenix-banner span{font-size:14px !important}
+}

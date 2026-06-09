@@ -80,3 +80,21 @@ const lotusGlowField=$('#lotusGlowField');
 for(let i=0;i<14;i++){ const g=document.createElement('span'); g.className='lotus-glow'; const size=28+Math.random()*34; g.style.width=`${size}px`; g.style.height=`${size}px`; g.style.left=`${Math.random()*100}vw`; g.style.top=`${55+Math.random()*40}vh`; g.style.animationDuration=`${4+Math.random()*5}s`; g.style.animationDelay=`${Math.random()*4}s`; lotusGlowField?.appendChild(g); }
 
 $('#dockMusic')?.addEventListener('click', async()=>{ if(!audio) return; state.wantsMusic = audio.paused; if(state.wantsMusic){ await playMusic(true); if(!audio.paused) toast(t('toastMusicOn')); } else pauseMusic(true); });
+
+// Final-plus additions: suggestion chips + copy demo bank number
+$$('.wish-suggestions button').forEach(btn => btn.addEventListener('click', () => {
+  const textarea = $('textarea[name="message"]');
+  if (textarea) {
+    textarea.value = btn.dataset.wish || btn.textContent.trim();
+    textarea.focus();
+  }
+}));
+$$('.copy-btn').forEach(btn => btn.addEventListener('click', async () => {
+  const value = btn.dataset.copy || '';
+  try {
+    await navigator.clipboard.writeText(value);
+    toast(t('toastCopied') || 'Đã copy số tài khoản.');
+  } catch (e) {
+    toast(t('toastCopied') || 'Đã copy số tài khoản.');
+  }
+}));
