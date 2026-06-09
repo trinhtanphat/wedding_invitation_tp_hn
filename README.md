@@ -1,18 +1,18 @@
-ONLY ONE FINAL
+# Wedding Invitation - Full Rebuild From Zero
 
-Day la ban chot cuoi cung duoc lua chon de dung lam ban chinh thuc.
+Bản này được làm lại hoàn toàn từ đầu:
+- HTML mới
+- CSS mới
+- JS mới
+- UI/UX mới
+- Chỉ giữ assets ảnh và content cưới chính
 
-Dac diem:
-- Long phung co phong cao cap
-- Hieu ung mo cong dep va ro
-- Giao dien da ngon ngu: VI / EN / 简中 / 繁中
-- Toi uu desktop va mobile
-- Nhac dat tai assets/music/wedding-song.mp3
+## Style
+Cổ trang Trung Hoa, long phụng, hoa đăng, giấy cuộn, cung đình.
 
+## Nhạc
+Đặt file MP3 tại:
+assets/music/wedding-song.mp3
 
-Update: them image long / phuong o phan dau cong cung dinh va doi banner thanh 龙龍 / 凤鳳 / 龍門大吉 / 鳳舞呈祥.
-
-
-Premium blend update:
-- Blend mem hon phan image Long/Phuong vao dau cong.
-- Nang cap hero/gate premium hon bang glow, frame, plaque, banner va shadow moi.
+## Chạy
+Mở index.html bằng trình duyệt.

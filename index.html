@@ -3,258 +3,138 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#24080a" />
-  <meta name="description" content="Thiệp cưới cổ phong Trung Hoa của Tấn Phát và Hồng Ngọc" />
-  <title>Tấn Phát & Hồng Ngọc — Only One Final Premium Wedding Invitation</title>
-  <link rel="icon" href="assets/heart.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="theme-color" content="#1a0507" />
+  <meta name="description" content="Thiệp cưới online cổ phong của Tấn Phát và Hồng Ngọc" />
+  <title>Tấn Phát & Hồng Ngọc — Thiệp cưới online</title>
+  <link rel="icon" href="assets/icons/double-happiness.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/wedding.css" />
 </head>
-<body class="site-locked variant-v13 variant-v14 variant-best variant-v15 variant-v16 variant-final" data-lang="vi">
-  <audio id="bgMusic" preload="metadata" loop>
+<body>
+  <audio id="weddingMusic" preload="metadata" loop>
     <source src="assets/music/wedding-song.mp3" type="audio/mpeg" />
   </audio>
 
-  <div class="preloader" id="preloader" aria-hidden="true">
-    <div class="preloader-seal">囍</div>
-    <p data-i18n="loader">Đang thắp đèn và trải lụa đỏ...</p>
+  <div class="boot" id="boot">
+    <div class="boot__mark">囍</div>
+    <p data-i18n="boot">Đang chuẩn bị thiệp cưới...</p>
   </div>
 
-  <div class="atmosphere" aria-hidden="true">
+  <div class="scene-bg" aria-hidden="true">
     <div class="moon"></div>
-    <div class="moon-glow"></div>
-    <div class="celestial-aurora aurora-a"></div>
-    <div class="celestial-aurora aurora-b"></div>
-    <div class="mountain back"></div>
-    <div class="mountain front"></div>
-    <div class="palace-layer p-back"></div>
-    <div class="palace-layer p-front"></div>
-    <div class="cloud c1"></div>
-    <div class="cloud c2"></div>
-    <div class="cloud c3"></div>
-    <div class="mist m1"></div>
-    <div class="mist m2"></div>
-    <div class="lantern l1"><span>囍</span></div>
-    <div class="lantern l2"><span>囍</span></div>
-    <div class="lantern l3"><span>囍</span></div>
+    <div class="palace-shadow"></div>
+    <div class="mountains layer-1"></div>
+    <div class="mountains layer-2"></div>
+    <div class="fog fog-1"></div>
+    <div class="fog fog-2"></div>
   </div>
-  <div class="petal-field" id="petalField" aria-hidden="true"></div>
-  <div class="spark-field" id="sparkField" aria-hidden="true"></div>
-  <div class="firework-field" id="fireworkField" aria-hidden="true"></div>
-  <div class="golden-rain" id="goldenRain" aria-hidden="true"></div>
-  <div class="star-field" id="starField" aria-hidden="true"></div>
-  <div class="jade-orb-field" id="jadeOrbField" aria-hidden="true"></div>
-  <div class="spirit-lantern-field" id="spiritLanternField" aria-hidden="true"></div>
-  <div class="lotus-glow-field" id="lotusGlowField" aria-hidden="true"></div>
-  <div class="stamp-flash" id="stampFlash" aria-hidden="true">囍</div>
+  <div class="particle-layer" id="particleLayer" aria-hidden="true"></div>
 
-  <section class="gate-overlay" id="gateOverlay" aria-label="Mở thiệp cưới">
-    <div class="gate-glow"></div>
-    <div class="v10-heaven-ring"></div>
-    <div class="v10-silk-ribbon ribbon-a"></div>
-    <div class="v10-silk-ribbon ribbon-b"></div>
-    <div class="immortal-mist mist-left"></div>
-    <div class="immortal-mist mist-right"></div>
-    <div class="dragon-line dragon-left"></div>
-    <div class="dragon-line dragon-right"></div>
-    <div class="phoenix-trail phoenix-left"></div>
-    <div class="phoenix-trail phoenix-right"></div>
-    <div class="pearls-arc"></div>
-    <div class="phoenix-crown crown-left art-crown">
-      <img src="assets/dragon-crest.png" alt="Long crest" class="crown-art" />
-      <small>龙龍</small><b></b><i></i>
+  <section class="cover" id="cover">
+    <div class="cover__ornament cover__ornament--left">
+      <img src="assets/images/dragon-crest.png" alt="Dragon ornament" />
+      <span>龍門大吉</span>
     </div>
-    <div class="phoenix-crown crown-right art-crown">
-      <img src="assets/phoenix-crest.png" alt="Phuong crest" class="crown-art" />
-      <small>凤鳳</small><b></b><i></i>
+    <div class="cover__ornament cover__ornament--right">
+      <img src="assets/images/phoenix-crest.png" alt="Phoenix ornament" />
+      <span>鳳舞呈祥</span>
     </div>
-    <div class="dragon-phoenix-banner banner-left"><span>龍門大吉</span></div>
-    <div class="dragon-phoenix-banner banner-right"><span>鳳舞呈祥</span></div>
-    <div class="royal-rays"></div>
-    <div class="moon-bridge"></div>
-    <div class="celestial-wave"></div>
-    <div class="gate-stage">
-      <div class="gate-roof">
-        <div class="roof-main"></div>
-        <div class="roof-eave left"></div>
-        <div class="roof-eave right"></div>
-        <div class="roof-ornament left"></div>
-        <div class="roof-ornament right"></div>
-        <div class="roof-center">囍</div>
-        <div class="roof-jade-line"></div>
+
+    <div class="cover-scroll">
+      <div class="scroll-rod scroll-rod--top"></div>
+      <div class="scroll-paper">
+        <div class="seal">囍</div>
+        <p class="eyebrow" data-i18n="coverEyebrow">Thiệp cưới online</p>
+        <h1 data-i18n="coverTitle">Tấn Phát & Hồng Ngọc</h1>
+        <p data-i18n="coverText">Một lời mời từ trái tim, được gói trong sắc đỏ hỷ sự, ánh vàng cung đăng và niềm vui đoàn viên.</p>
+        <button class="primary-btn" id="openInvitation" type="button">
+          <span data-i18n="openInvite">Mở thiệp cưới</span>
+        </button>
+        <small>♪ <span data-i18n="musicNote">Bấm mở thiệp để phát nhạc nền</span></small>
       </div>
-
-      <div class="imperial-plaque forbidden-plaque">百年好合</div>
-      <div class="flying-couplet couplet-left"><span>佳偶天成</span><span>永结同心</span></div>
-      <div class="flying-couplet couplet-right"><span>花好月圆</span><span>琴瑟和鸣</span></div>
-
-      <div class="gate-columns">
-        <div class="column left"></div>
-        <div class="column right"></div>
-      </div>
-
-      <div class="gate-inner">
-        <button class="gate-click-layer" id="gateClickLayer" type="button" aria-label="Open palace gate"></button>
-        <div class="top-drape"></div>
-        <div class="side-curtain left">
-          <div class="curtain-pattern"></div>
-          <div class="tassel one"></div>
-          <div class="tassel two"></div>
-        </div>
-        <div class="side-curtain right">
-          <div class="curtain-pattern"></div>
-          <div class="tassel one"></div>
-          <div class="tassel two"></div>
-        </div>
-
-        <div class="door-panel left">
-          <div class="panel-frame"></div>
-          <div class="panel-lattice"></div>
-          <div class="panel-emblem">囍</div>
-          <div class="panel-ring"></div>
-        </div>
-        <div class="door-panel right">
-          <div class="panel-frame"></div>
-          <div class="panel-lattice"></div>
-          <div class="panel-emblem">囍</div>
-          <div class="panel-ring"></div>
-        </div>
-
-        <div class="invitation-scroll">
-          <div class="scroll-ornament top"></div>
-          <div class="scroll-ornament bottom"></div>
-          <div class="fan fan-left"></div><div class="fan fan-right"></div><div class="seal-hero">囍</div><div class="red-stamp">良缘</div>
-          <p class="gate-kicker" data-i18n="gateKicker">Thiệp hỷ</p>
-          <h1 data-i18n="gateTitle">Tấn Phát & Hồng Ngọc</h1>
-          <p class="gate-copy" data-i18n="gateText">Mở cổng son và bước vào một đêm trăng, sương và hoa đăng của chúng tôi.</p>
-          <button class="open-btn" id="openInvitation" type="button" data-i18n="openButton">Mở thiệp</button>
-          <p class="music-hint"><span>♪</span> <span data-i18n="musicHint">Nhạc sẽ phát sau khi mở thiệp</span></p>
-        </div>
-        <div class="lotus-lake"><i></i><i></i><i></i><span></span></div>
-      </div>
-
-      <div class="gate-base"></div>
-    </div>
-    <div class="version-ribbon">FINAL</div>
-    <div class="gate-open-hint">
-      <button class="open-btn floating-open" id="openGateFloating" type="button" data-i18n="openButton">Mở thiệp</button>
-      <p data-i18n="clickHint">Nhấn để mở cổng cung đình</p><div class="tap-arrow">⌄</div><div class="tap-glow"></div>
+      <div class="scroll-rod scroll-rod--bottom"></div>
     </div>
   </section>
 
-  <button class="replay-btn" id="replayGate" type="button" data-i18n="replayGate">Xem lại cổng</button>
+  <header class="site-header" id="siteHeader">
+    <a href="#home" class="site-brand">
+      <span>囍</span>
+      <div><strong>TP & HN</strong><small>百年好合</small></div>
+    </a>
 
-  <header class="topbar" id="topbar">
-    <a href="#home" class="brand"><span>囍</span> TP & HN</a>
-    <nav class="nav" id="nav">
+    <nav class="site-nav" id="siteNav">
+      <a href="#invite" data-i18n="navInvite">Thiệp mời</a>
       <a href="#story" data-i18n="navStory">Câu chuyện</a>
-      <a href="#event" data-i18n="navEvent">Hỷ sự</a>
-      <a href="#timeline" data-i18n="navTimeline">Lịch trình</a>
-      <a href="#gallery" data-i18n="navGallery">Ảnh cưới</a>
-      <a href="#rsvp" data-i18n="navRsvp">Xác nhận</a>
+      <a href="#event" data-i18n="navEvent">Ngày cưới</a>
+      <a href="#gallery" data-i18n="navGallery">Ảnh</a>
+      <a href="#rsvp" data-i18n="navRsvp">RSVP</a>
     </nav>
-    <div class="top-actions">
-      <button class="music-toggle" id="musicToggle" type="button" aria-label="Toggle music">♫</button>
-      <div class="lang-switch" aria-label="Language switcher">
-        <button type="button" data-lang="vi" class="active">VI</button>
-        <button type="button" data-lang="en">EN</button>
-        <button type="button" data-lang="zh-CN">简中</button>
-        <button type="button" data-lang="zh-TW">繁中</button>
+
+    <div class="site-tools">
+      <button id="musicBtn" class="round-btn" type="button" aria-label="Toggle music">♫</button>
+      <div class="language-box">
+        <button data-lang="vi" type="button">VI</button>
+        <button data-lang="en" type="button">EN</button>
+        <button data-lang="zh-CN" type="button">简</button>
+        <button data-lang="zh-TW" type="button">繁</button>
       </div>
-      <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button id="menuBtn" class="menu-btn" type="button" aria-label="Menu"><i></i><i></i><i></i></button>
     </div>
   </header>
 
   <main id="home">
-    <section class="hero section">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="hero-badge">
-            <div class="badge-seal">囍</div>
-            <div>
-              <small data-i18n="heroBadgeSmall">Song hỷ</small>
-              <strong data-i18n="heroBadgeStrong">Hoa đăng nguyệt dạ</strong>
-            </div>
+    <section class="hero-section">
+      <div class="container hero-layout">
+        <div class="hero-content reveal">
+          <div class="tiny-badge"><span>囍</span><b data-i18n="heroBadge">Long phụng thành duyên</b></div>
+          <p class="section-label" data-i18n="heroLabel">Save the date</p>
+          <h2 data-i18n="heroTitle">Tấn Phát <em>&</em><br>Hồng Ngọc</h2>
+          <p class="hero-lead" data-i18n="heroLead">Trân trọng kính mời bạn đến chung vui trong ngày hạnh phúc của chúng tôi.</p>
+
+          <div class="date-strip">
+            <div><span data-i18n="dayLabel">Chủ nhật</span><strong>22.11.2026</strong></div>
+            <i></i>
+            <div><span data-i18n="timeLabel">Khai tiệc</span><strong>18:00</strong></div>
           </div>
-          <p class="section-kicker" data-i18n="heroKicker">Một giấc mộng cổ phong dịu dàng</p>
-          <h2 data-i18n="heroTitle">Tấn Phát <span>&</span> Hồng Ngọc</h2>
-          <p class="hero-text" data-i18n="heroText">Trân trọng kính mời bạn đến chung vui trong ngày hạnh phúc của chúng tôi — nơi trăng sáng, mây nhẹ và lời chúc phúc cùng hội tụ.</p>
-          <div class="hero-date">
-            <span data-i18n="dateDay">Chủ nhật</span>
-            <strong>22 · 11 · 2026</strong>
-            <span>17:30</span>
-          </div>
+
           <div class="hero-actions">
-            <a class="btn primary" href="#event" data-i18n="seeEvent">Xem địa điểm</a>
-            <a class="btn ghost" href="wedding.ics" download data-i18n="addCalendar">Thêm vào lịch</a>
-          </div>
-          <div class="v16-quick-badges reveal delay-1">
-            <span class="v16-badge" data-i18n="finalBadge1">Phien ban chot cuoi</span>
-            <span class="v16-badge" data-i18n="finalBadge2">Long phung co phong</span>
-            <span class="v16-badge" data-i18n="finalBadge3">VI / EN / 简中 / 繁中</span>
+            <a href="#event" class="primary-btn" data-i18n="viewEvent">Xem ngày cưới</a>
+            <a href="wedding.ics" download class="ghost-btn" data-i18n="calendar">Thêm vào lịch</a>
           </div>
         </div>
 
-        <div class="hero-visual reveal delay-1" id="heroCard">
-          <div class="visual-frame outer"></div>
-          <div class="visual-frame inner"></div>
-          <div class="visual-moon"></div>
-          <div class="visual-seal">囍</div>
+        <div class="hero-photo-card reveal delay-1">
+          <div class="arch"></div>
           <picture>
-            <source srcset="assets/couple.webp" type="image/webp" />
-            <img src="assets/couple.jpg" alt="Tấn Phát và Hồng Ngọc" class="hero-photo" />
+            <source srcset="assets/images/couple.webp" type="image/webp">
+            <img src="assets/images/couple.jpg" alt="Tấn Phát và Hồng Ngọc" />
           </picture>
-          <div class="visual-caption" data-i18n="saveDate">Save the date</div>
+          <div class="photo-caption">良缘天定</div>
         </div>
       </div>
     </section>
 
-    <section class="intro section">
-      <div class="container paper-card center-card reveal">
-        <div class="paper-seal">囍</div>
-        <p class="section-kicker" data-i18n="introKicker">Mộng hoa đăng</p>
-        <h2 data-i18n="introTitle">Một lời mời dịu dàng giữa lụa đỏ, ánh trăng và làn sương mỏng.</h2>
-        <p data-i18n="introText">Sự hiện diện của bạn là món quà quý giá nhất dành cho Tấn Phát và Hồng Ngọc trong ngày trọng đại này.</p>
-      </div>
-    </section>
-
-
-    <section class="palace-poem section">
-      <div class="container palace-poem-grid">
-        <div class="poem-panel reveal">
-          <span>百</span><span>年</span><span>好</span><span>合</span>
-        </div>
-        <article class="paper-card poem-card reveal delay-1">
-          <p class="section-kicker" data-i18n="poemKicker">Cổ phong</p>
-          <h2 data-i18n="poemTitle">Cổng son mở lối, hoa đăng dẫn đường.</h2>
-          <p data-i18n="poemText">Giữa sắc đỏ hỷ sự và ánh vàng cung đăng, chúng tôi mong được cùng bạn lưu lại một đêm thật đẹp, thật ấm và thật đáng nhớ.</p>
-        </article>
-        <div class="poem-panel right reveal delay-2">
-          <span>永</span><span>结</span><span>同</span><span>心</span>
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="family-blessing section">
+    <section class="section invitation-section" id="invite">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="section-kicker" data-i18n="familyKicker">Gia đình hai họ</p>
-          <h2 data-i18n="familyTitle">Kính báo hỷ cùng gia đình và người thân.</h2>
-          <p data-i18n="familyText">Thông tin nhà trai, nhà gái đang để mẫu để bạn thay tên phụ huynh, địa chỉ và lịch lễ thật.</p>
+          <span class="heading-symbol">囍</span>
+          <p class="section-label" data-i18n="inviteLabel">Trân trọng kính mời</p>
+          <h2 data-i18n="inviteTitle">Cùng chúng tôi viết nên một chương mới.</h2>
+          <p data-i18n="inviteText">Sự hiện diện của bạn là niềm vui và là lời chúc phúc quý giá nhất dành cho cô dâu chú rể.</p>
         </div>
-        <div class="family-grid">
-          <article class="family-card reveal">
-            <div class="family-seal">家</div>
-            <p class="family-label" data-i18n="groomFamily">Nhà trai</p>
-            <h3 data-i18n="groomNameCard">Chú rể: Tấn Phát</h3>
+
+        <div class="invite-grid">
+          <article class="paper-card reveal">
+            <span class="card-icon">郎</span>
+            <p class="card-kicker" data-i18n="groomSide">Nhà trai</p>
+            <h3 data-i18n="groomName">Chú rể: Tấn Phát</h3>
             <p data-i18n="groomParents">Ông/Bà: cập nhật tên phụ huynh nhà trai</p>
             <p data-i18n="groomAddress">Địa chỉ nhà trai: Tân Bình, TP.HCM</p>
           </article>
-          <article class="family-card reveal delay-1">
-            <div class="family-seal">囍</div>
-            <p class="family-label" data-i18n="brideFamily">Nhà gái</p>
-            <h3 data-i18n="brideNameCard">Cô dâu: Hồng Ngọc</h3>
+
+          <article class="paper-card reveal delay-1">
+            <span class="card-icon">娘</span>
+            <p class="card-kicker" data-i18n="brideSide">Nhà gái</p>
+            <h3 data-i18n="brideName">Cô dâu: Hồng Ngọc</h3>
             <p data-i18n="brideParents">Ông/Bà: cập nhật tên phụ huynh nhà gái</p>
             <p data-i18n="brideAddress">Địa chỉ nhà gái: Tân Bình, TP.HCM</p>
           </article>
@@ -262,38 +142,31 @@
       </div>
     </section>
 
-    <section class="signature-scene section">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="section-kicker" data-i18n="finalKicker">Ban chot cuoi</p>
-          <h2 data-i18n="finalTitle">Một đêm long phụng, hoa đăng và nguyệt sắc dành riêng cho Tấn Phát & Hồng Ngọc.</h2>
-          <p data-i18n="finalText">Đây là bản chốt cuối cùng mình chọn cho bạn: giữ vẻ sang trọng của cung đình, độ huyền ảo của tiên hiệp, sự rõ ràng của long phụng và trải nghiệm mượt trên cả desktop lẫn mobile.</p>
-        </div>
-        <div class="signature-grid">
-          <article class="signature-card reveal">
-            <div class="signature-icon">龙</div>
-            <h3 data-i18n="finalCard1Title">Cổng son long phụng</h3>
-            <p data-i18n="finalCard1Text">Hiệu ứng mở cổng là điểm nhấn đầu tiên: sang, rõ, dễ bấm và tạo cảm giác nghi lễ ngay khi mở thiệp.</p>
-          </article>
-          <article class="signature-card reveal delay-1">
-            <div class="signature-icon">月</div>
-            <h3 data-i18n="finalCard2Title">Nguyệt sắc mộng ảo</h3>
-            <p data-i18n="finalCard2Text">Giữ lại tinh thần trăng sáng, sương ngọc, đèn linh và hoa rơi để tổng thể lãng mạn, mềm mại và có chiều sâu thị giác.</p>
-          </article>
-          <article class="signature-card reveal delay-2">
-            <div class="signature-icon">囍</div>
-            <h3 data-i18n="finalCard3Title">Một bản hoàn chỉnh</h3>
-            <p data-i18n="finalCard3Text">Giữ đầy đủ ảnh cưới, câu chuyện, thông tin cưới, RSVP, đa ngôn ngữ và nhạc nền để bạn có thể dùng ngay làm bản chính thức.</p>
-          </article>
+    <section class="section story-section" id="story">
+      <div class="container story-layout">
+        <article class="story-scroll reveal">
+          <p class="section-label" data-i18n="storyLabel">Câu chuyện</p>
+          <h2 data-i18n="storyTitle">Từ một ánh nhìn, thành một đời bình yên.</h2>
+          <p data-i18n="storyText">Chúng tôi đã chọn cùng nhau đi tiếp, để những ngày bình thường cũng trở thành kỷ niệm đẹp. Mong bạn sẽ đến chứng kiến khoảnh khắc chúng tôi bắt đầu một chương mới.</p>
+          <strong>Tấn Phát & Hồng Ngọc</strong>
+        </article>
+
+        <div class="poem-board reveal delay-1">
+          <span>百</span><span>年</span><span>好</span><span>合</span>
+          <p data-i18n="vow">Nguyện cùng nhau đi qua bốn mùa, giữ một mái nhà ấm và một đời có nhau.</p>
         </div>
       </div>
     </section>
 
-    <section class="countdown section compact">
-      <div class="container reveal">
-        <p class="section-kicker light" data-i18n="countKicker">Đếm ngược</p>
-        <h2 data-i18n="countTitle">Ngày hẹn ước đang đến gần</h2>
-        <div class="countdown-grid" id="countdown" data-date="2026-11-22T17:30:00+07:00">
+    <section class="countdown-section section">
+      <div class="container">
+        <div class="section-heading section-heading--light reveal">
+          <span class="heading-symbol">月</span>
+          <p class="section-label" data-i18n="countLabel">Đếm ngược</p>
+          <h2 data-i18n="countTitle">Ngày hẹn ước đang đến gần</h2>
+        </div>
+
+        <div class="countdown" id="countdown" data-date="2026-11-22T17:30:00+07:00">
           <div><strong id="days">00</strong><span data-i18n="days">Ngày</span></div>
           <div><strong id="hours">00</strong><span data-i18n="hours">Giờ</span></div>
           <div><strong id="minutes">00</strong><span data-i18n="minutes">Phút</span></div>
@@ -302,252 +175,178 @@
       </div>
     </section>
 
-    <section class="story section" id="story">
-      <div class="container story-grid">
-        <article class="paper-card reveal">
-          <p class="section-kicker" data-i18n="storyKicker">Câu chuyện</p>
-          <h2 data-i18n="storyTitle">Từ một ánh nhìn, thành một đời bình yên.</h2>
-          <p data-i18n="storyText">Chúng tôi đã chọn cùng nhau đi tiếp, để những ngày bình thường cũng trở thành kỷ niệm đẹp. Mong bạn sẽ đến chứng kiến khoảnh khắc chúng tôi bắt đầu một chương mới.</p>
-          <div class="signature">Tấn Phát & Hồng Ngọc</div>
-        </article>
-        <article class="vow-card reveal delay-1">
-          <div class="vow-seal">囍</div>
-          <p data-i18n="vowText">Nguyện cùng nhau đi qua bốn mùa, giữ một mái nhà ấm, một tình yêu lành và một đời có nhau.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="event section" id="event">
+    <section class="section event-section" id="event">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="section-kicker" data-i18n="eventKicker">Hỷ sự</p>
-          <h2 data-i18n="eventTitle">Thông tin ngày cưới</h2>
-          <p data-i18n="eventText">Thời gian và địa điểm hiện đang để giả định, bạn có thể chỉnh sửa rất nhanh trong file HTML.</p>
+          <span class="heading-symbol">礼</span>
+          <p class="section-label" data-i18n="eventLabel">Thông tin hỷ sự</p>
+          <h2 data-i18n="eventTitle">Ngày cưới của chúng tôi</h2>
+          <p data-i18n="eventText">Thông tin hiện đang để giả định, bạn có thể thay địa điểm và thời gian thật sau.</p>
         </div>
+
         <div class="event-grid">
           <article class="event-card reveal">
-            <div class="event-symbol">礼</div>
-            <h3 data-i18n="ceremonyTitle">Lễ thành hôn</h3>
-            <p class="event-time" data-i18n="ceremonyTime">17:30 — Chủ nhật, 22/11/2026</p>
-            <p data-i18n="ceremonyPlace">Tư gia nhà gái, Tân Bình, Thành phố Hồ Chí Minh</p>
+            <span>礼</span>
+            <h3 data-i18n="ceremony">Lễ thành hôn</h3>
+            <b data-i18n="ceremonyTime">17:30 — Chủ nhật, 22/11/2026</b>
+            <p data-i18n="ceremonyPlace">Tư gia nhà gái, Tân Bình, TP.HCM</p>
           </article>
-          <article class="event-card featured reveal delay-1">
-            <div class="event-symbol">宴</div>
-            <h3 data-i18n="partyTitle">Tiệc cưới</h3>
-            <p class="event-time" data-i18n="partyTime">18:00 — Chủ nhật, 22/11/2026</p>
+
+          <article class="event-card event-card--main reveal delay-1">
+            <span>宴</span>
+            <h3 data-i18n="party">Tiệc cưới</h3>
+            <b data-i18n="partyTime">18:00 — Chủ nhật, 22/11/2026</b>
             <p data-i18n="partyPlace">White Palace Hoàng Văn Thụ, 194 Hoàng Văn Thụ, Phú Nhuận, TP.HCM</p>
-            <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=White+Palace+Hoang+Van+Thu+194+Hoang+Van+Thu+Phu+Nhuan+Ho+Chi+Minh" data-i18n="openMap">Mở bản đồ</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=White+Palace+Hoang+Van+Thu+194+Hoang+Van+Thu+Phu+Nhuan+Ho+Chi+Minh" target="_blank" rel="noopener" data-i18n="openMap">Mở bản đồ</a>
           </article>
+
           <article class="event-card reveal delay-2">
-            <div class="event-symbol">衣</div>
-            <h3 data-i18n="dressTitle">Dress code</h3>
-            <p class="event-time">Red · Gold · Ivory</p>
-            <p data-i18n="dressText">Trang phục thanh lịch với tông đỏ, vàng, trắng ngà để hòa cùng không gian Trung Hoa cổ phong.</p>
+            <span>衣</span>
+            <h3 data-i18n="dress">Dress code</h3>
+            <b>Red · Gold · Ivory</b>
+            <p data-i18n="dressText">Trang phục thanh lịch với tông đỏ, vàng, trắng ngà.</p>
           </article>
         </div>
       </div>
     </section>
 
-
-    <section class="formal-invites section">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="section-kicker" data-i18n="inviteKicker">Thư mời chi tiết</p>
-          <h2 data-i18n="inviteTitle">Lịch lễ và thiệp mời hai bên.</h2>
-          <p data-i18n="inviteText">Bố cục này bổ sung kiểu thư mời đầy đủ: nhà gái, nhà trai, ngày dương lịch, ngày âm lịch và nút xác nhận tham dự.</p>
-        </div>
-        <div class="invite-grid">
-          <article class="invite-card reveal">
-            <div class="invite-top">女方</div>
-            <h3 data-i18n="bridePartyTitle">Tiệc cưới nhà gái</h3>
-            <p class="invite-time" data-i18n="bridePartyTime">Thứ Bảy · 16:30 · 21/11/2026</p>
-            <p data-i18n="bridePartyLunar">(Ngày âm lịch sẽ cập nhật theo lịch thật)</p>
-            <p data-i18n="bridePartyPlace">Tại tư gia nhà gái · Tân Bình, TP.HCM</p>
-            <a class="btn ghost small" href="#rsvp" data-i18n="confirmShort">Xác nhận</a>
-          </article>
-          <article class="invite-card featured reveal delay-1">
-            <div class="invite-top">囍</div>
-            <h3 data-i18n="mainCeremonyTitle">Lễ thành hôn</h3>
-            <p class="invite-time" data-i18n="mainCeremonyTime">Chủ Nhật · 17:30 · 22/11/2026</p>
-            <p data-i18n="mainCeremonyLunar">(Ngày âm lịch sẽ cập nhật theo lịch thật)</p>
-            <p data-i18n="mainCeremonyPlace">White Palace Hoàng Văn Thụ · TP.HCM</p>
-            <a class="btn primary small" href="#rsvp" data-i18n="confirmShort">Xác nhận</a>
-          </article>
-          <article class="invite-card reveal delay-2">
-            <div class="invite-top">男方</div>
-            <h3 data-i18n="groomPartyTitle">Tiệc cưới nhà trai</h3>
-            <p class="invite-time" data-i18n="groomPartyTime">Chủ Nhật · 18:00 · 22/11/2026</p>
-            <p data-i18n="groomPartyLunar">(Ngày âm lịch sẽ cập nhật theo lịch thật)</p>
-            <p data-i18n="groomPartyPlace">Tại tư gia nhà trai · Tân Bình, TP.HCM</p>
-            <a class="btn ghost small" href="#rsvp" data-i18n="confirmShort">Xác nhận</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="calendar-map section compact">
-      <div class="container calendar-map-grid">
-        <article class="calendar-card reveal">
-          <p class="section-kicker" data-i18n="calendarKicker">Lịch cưới</p>
-          <h2 data-i18n="calendarTitle">Tháng 11 · 2026</h2>
-          <div class="mini-calendar" aria-label="Wedding calendar">
-            <span>T2</span><span>T3</span><span>T4</span><span>T5</span><span>T6</span><span>T7</span><span>CN</span>
-            <i></i><i></i><i></i><i></i><i></i><b>21</b><strong>22</strong>
+    <section class="section calendar-map-section">
+      <div class="container calendar-map-layout">
+        <article class="paper-card reveal">
+          <span class="card-icon">历</span>
+          <p class="card-kicker" data-i18n="calendarLabel">Lịch cưới</p>
+          <h3 data-i18n="calendarTitle">Tháng 11 / 2026</h3>
+          <div class="mini-calendar">
+            <span>CN</span><span>T2</span><span>T3</span><span>T4</span><span>T5</span><span>T6</span><span>T7</span>
+            <i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i>
+            <i>8</i><i>9</i><i>10</i><i>11</i><i>12</i><i>13</i><i>14</i>
+            <i>15</i><i>16</i><i>17</i><i>18</i><i>19</i><i>20</i><i>21</i>
+            <strong>22</strong><i>23</i><i>24</i><i>25</i><i>26</i><i>27</i><i>28</i>
           </div>
-          <p data-i18n="calendarText">Ngày 22 được đánh dấu là ngày chính của tiệc cưới.</p>
+          <p data-i18n="lunar">Ngày âm lịch: cập nhật sau</p>
         </article>
+
         <article class="map-card reveal delay-1">
-          <p class="section-kicker" data-i18n="mapKicker">Bản đồ</p>
-          <h2 data-i18n="mapTitle">Điểm đến ngày hỷ sự</h2>
-          <p data-i18n="mapText">Bạn có thể mở Google Maps từ nút địa điểm trong phần thông tin cưới. Khi có địa chỉ thật, chỉ cần thay link bản đồ trong HTML.</p>
-          <div class="map-placeholder">
-            <span>MAP</span>
-            <small>White Palace Hoàng Văn Thụ</small>
-          </div>
+          <div class="map-symbol">⌖</div>
+          <p class="card-kicker" data-i18n="mapLabel">Bản đồ</p>
+          <h3 data-i18n="mapTitle">White Palace Hoàng Văn Thụ</h3>
+          <p data-i18n="mapAddress">194 Hoàng Văn Thụ, Phú Nhuận, TP.HCM</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=White+Palace+Hoang+Van+Thu+194+Hoang+Van+Thu+Phu+Nhuan+Ho+Chi+Minh" target="_blank" rel="noopener" class="primary-btn" data-i18n="openMap">Mở bản đồ</a>
         </article>
       </div>
     </section>
 
-
-
-    <section class="timeline section" id="timeline">
+    <section class="section timeline-section">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="section-kicker" data-i18n="timelineKicker">Lịch trình</p>
+          <span class="heading-symbol">时</span>
+          <p class="section-label" data-i18n="timelineLabel">Lịch trình</p>
           <h2 data-i18n="timelineTitle">Một đêm hoa đăng dịu dàng</h2>
         </div>
-        <div class="timeline-list">
-          <div class="timeline-item reveal"><time>17:00</time><div><h3 data-i18n="tl1Title">Đón khách</h3><p data-i18n="tl1Text">Chụp ảnh, ký tên lưu niệm và dùng tiệc nhẹ.</p></div></div>
-          <div class="timeline-item reveal"><time>17:30</time><div><h3 data-i18n="tl2Title">Nghi thức cưới</h3><p data-i18n="tl2Text">Trao nhẫn và nhận lời chúc phúc từ hai bên gia đình.</p></div></div>
-          <div class="timeline-item reveal"><time>18:00</time><div><h3 data-i18n="tl3Title">Khai tiệc</h3><p data-i18n="tl3Text">Dùng bữa tối cùng gia đình, bạn bè và người thân.</p></div></div>
-          <div class="timeline-item reveal"><time>19:30</time><div><h3 data-i18n="tl4Title">Chung vui</h3><p data-i18n="tl4Text">Nâng ly, âm nhạc và những bức ảnh thật đáng nhớ.</p></div></div>
+
+        <div class="lantern-road">
+          <article class="timeline-step reveal"><time>17:00</time><div><h3 data-i18n="tl1">Đón khách</h3><p data-i18n="tl1Text">Chụp ảnh, ký tên lưu niệm và dùng tiệc nhẹ.</p></div></article>
+          <article class="timeline-step reveal delay-1"><time>17:30</time><div><h3 data-i18n="tl2">Nghi thức cưới</h3><p data-i18n="tl2Text">Trao nhẫn và nhận lời chúc phúc từ hai bên gia đình.</p></div></article>
+          <article class="timeline-step reveal delay-2"><time>18:00</time><div><h3 data-i18n="tl3">Khai tiệc</h3><p data-i18n="tl3Text">Dùng bữa tối cùng gia đình, bạn bè và người thân.</p></div></article>
+          <article class="timeline-step reveal delay-3"><time>19:30</time><div><h3 data-i18n="tl4">Chung vui</h3><p data-i18n="tl4Text">Nâng ly, âm nhạc và những bức ảnh thật đáng nhớ.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section class="gallery section" id="gallery">
+    <section class="section gallery-section" id="gallery">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="section-kicker" data-i18n="galleryKicker">Ảnh cưới</p>
+          <span class="heading-symbol">影</span>
+          <p class="section-label" data-i18n="galleryLabel">Ảnh cưới</p>
           <h2 data-i18n="galleryTitle">Khoảnh khắc của chúng tôi</h2>
         </div>
-        <div class="gallery-grid">
-          <button class="gallery-item large reveal" data-img="assets/couple-original.jpg"><img src="assets/couple.jpg" alt="Ảnh cưới 1" /></button>
-          <button class="gallery-item reveal delay-1" data-img="assets/couple-original.jpg"><img src="assets/couple.jpg" alt="Ảnh cưới 2" /></button>
-          <button class="gallery-item reveal delay-2" data-img="assets/couple-original.jpg"><img src="assets/couple.jpg" alt="Ảnh cưới 3" /></button>
-          <button class="gallery-item wide reveal delay-3" data-img="assets/couple-original.jpg"><img src="assets/couple.jpg" alt="Ảnh cưới 4" /></button>
+
+        <div class="gallery-wall">
+          <button class="photo-tile photo-tile--large reveal" data-img="assets/images/couple-original.jpg"><img src="assets/images/couple.jpg" alt="Wedding photo 1"></button>
+          <button class="photo-tile reveal delay-1" data-img="assets/images/couple-original.jpg"><img src="assets/images/couple.jpg" alt="Wedding photo 2"></button>
+          <button class="photo-tile reveal delay-2" data-img="assets/images/couple-original.jpg"><img src="assets/images/couple.jpg" alt="Wedding photo 3"></button>
+          <button class="photo-tile photo-tile--wide reveal delay-3" data-img="assets/images/couple-original.jpg"><img src="assets/images/couple.jpg" alt="Wedding photo 4"></button>
         </div>
       </div>
     </section>
 
-
-    <section class="gift-box section">
+    <section class="section gift-section">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="section-kicker" data-i18n="giftKicker">Hộp mừng cưới</p>
-          <h2 data-i18n="giftTitle">Gửi mừng cưới đến cô dâu chú rể.</h2>
-          <p data-i18n="giftText">Mình thêm sẵn bố cục QR như mẫu tham khảo. Bạn chỉ cần thay ảnh QR và số tài khoản thật.</p>
+          <span class="heading-symbol">礼</span>
+          <p class="section-label" data-i18n="giftLabel">Hộp mừng cưới</p>
+          <h2 data-i18n="giftTitle">Gửi quà mừng đến cô dâu chú rể</h2>
+          <p data-i18n="giftText">Khu vực QR đang để mẫu, bạn có thể thay bằng QR ngân hàng thật.</p>
         </div>
-        <div class="gift-grid">
-          <article class="gift-card reveal">
-            <div class="qr-placeholder">QR</div>
-            <h3 data-i18n="giftBride">Mừng cưới cô dâu</h3>
-            <p>Hồng Ngọc · 0000 0000 0000</p>
-            <button class="btn ghost small copy-btn" type="button" data-copy="000000000000" data-i18n="copyBank">Copy STK</button>
-          </article>
-          <article class="gift-card reveal delay-1">
-            <div class="qr-placeholder">QR</div>
-            <h3 data-i18n="giftGroom">Mừng cưới chú rể</h3>
-            <p>Tấn Phát · 0000 0000 0000</p>
-            <button class="btn ghost small copy-btn" type="button" data-copy="000000000000" data-i18n="copyBank">Copy STK</button>
-          </article>
+
+        <div class="gift-layout">
+          <article class="gift-card reveal"><div class="qr">QR</div><h3>Tấn Phát</h3><p>Ngân hàng: cập nhật</p><p>STK: cập nhật</p></article>
+          <article class="gift-card reveal delay-1"><div class="qr">QR</div><h3>Hồng Ngọc</h3><p>Ngân hàng: cập nhật</p><p>STK: cập nhật</p></article>
         </div>
       </div>
     </section>
 
-    <section class="wishes section">
-      <div class="container paper-card center-card reveal">
-        <p class="section-kicker" data-i18n="wishKicker">Lời chúc</p>
+    <section class="section wish-section">
+      <div class="container wish-panel reveal">
+        <span class="heading-symbol">愿</span>
+        <p class="section-label" data-i18n="wishLabel">Lời chúc</p>
         <h2 data-i18n="wishTitle">Gửi lời chúc đến cô dâu chú rể</h2>
-        <p data-i18n="wishText">Những lời chúc của bạn sẽ là kỷ niệm rất đẹp trong ngày trọng đại này.</p>
-        <div class="wish-suggestions" aria-label="Wish suggestions">
-          <button type="button" data-wish="Chúc hai bạn trăm năm hạnh phúc!" data-i18n="wishSuggest1">Chúc hai bạn trăm năm hạnh phúc!</button>
-          <button type="button" data-wish="Happy Wedding, chúc hai bạn mãi yêu thương nhau." data-i18n="wishSuggest2">Happy Wedding, chúc hai bạn mãi yêu thương nhau.</button>
-          <button type="button" data-wish="Chúc vợ chồng son một đời bình an và viên mãn." data-i18n="wishSuggest3">Chúc vợ chồng son một đời bình an và viên mãn.</button>
+        <p data-i18n="wishText">Những lời chúc của bạn sẽ là kỷ niệm thật đẹp trong ngày trọng đại này.</p>
+
+        <div class="wish-presets">
+          <button type="button" data-wish="Chúc hai bạn trăm năm hạnh phúc, mãi mãi yêu thương nhau.">Trăm năm hạnh phúc</button>
+          <button type="button" data-wish="Chúc Tấn Phát và Hồng Ngọc một đời bình an, viên mãn.">Viên mãn</button>
+          <button type="button" data-wish="Chúc ngày vui của hai bạn thật trọn vẹn và đáng nhớ.">Ngày vui trọn vẹn</button>
         </div>
+
         <form class="wish-form" id="wishForm">
-          <input type="text" name="name" data-i18n-placeholder="yourName" placeholder="Tên của bạn" required />
-          <textarea rows="4" name="message" data-i18n-placeholder="yourWish" placeholder="Lời chúc..." required></textarea>
-          <button class="btn primary" type="submit" data-i18n="sendWish">Gửi lời chúc</button>
+          <input name="name" type="text" data-i18n-placeholder="yourName" placeholder="Tên của bạn" required>
+          <textarea name="message" rows="4" data-i18n-placeholder="yourWish" placeholder="Lời chúc..." required></textarea>
+          <button class="primary-btn" type="submit" data-i18n="sendWish">Gửi lời chúc</button>
         </form>
-        <div class="wish-list" id="wishList" aria-live="polite"></div>
+        <div class="wish-list" id="wishList"></div>
       </div>
     </section>
 
-    <section class="rsvp section" id="rsvp">
-      <div class="container rsvp-grid">
-        <div class="paper-card reveal">
-          <p class="section-kicker" data-i18n="rsvpKicker">Xác nhận</p>
+    <section class="section rsvp-section" id="rsvp">
+      <div class="container rsvp-layout">
+        <article class="rsvp-copy reveal">
+          <p class="section-label" data-i18n="rsvpLabel">Xác nhận tham dự</p>
           <h2 data-i18n="rsvpTitle">Bạn sẽ đến chung vui chứ?</h2>
           <p data-i18n="rsvpText">Vui lòng xác nhận trước ngày 10/11/2026 để chúng tôi chuẩn bị chu đáo hơn.</p>
-          <div class="contact-card">
-            <strong data-i18n="contact">Liên hệ</strong>
-            <span>Tấn Phát: 09xx xxx xxx</span>
-            <span>Hồng Ngọc: 09xx xxx xxx</span>
-          </div>
-        </div>
-        <form class="paper-card rsvp-form reveal delay-1" id="rsvpForm">
-          <label><span data-i18n="guestName">Họ và tên</span><input type="text" name="guest" data-i18n-placeholder="guestNamePlaceholder" placeholder="Nhập tên của bạn" required /></label>
-          <label><span data-i18n="attendPlace">Nơi tham dự</span>
-            <select name="place">
-              <option data-i18n="attendMain">Tiệc cưới chính</option>
-              <option data-i18n="attendBride">Tiệc cưới nhà gái</option>
-              <option data-i18n="attendGroom">Tiệc cưới nhà trai</option>
-              <option data-i18n="attendCeremony">Lễ thành hôn</option>
-            </select>
-          </label>
-          <label><span data-i18n="guestCount">Số khách tham dự</span>
-            <select name="guests">
-              <option data-i18n="oneGuest">1 khách</option>
-              <option data-i18n="twoGuests">2 khách</option>
-              <option data-i18n="threeGuests">3 khách</option>
-              <option data-i18n="fourGuests">4 khách</option>
-            </select>
-          </label>
-          <label><span data-i18n="response">Phản hồi</span>
-            <select name="status">
-              <option data-i18n="willAttend">Tôi sẽ tham dự</option>
-              <option data-i18n="cannotAttend">Rất tiếc, tôi không tham dự được</option>
-            </select>
-          </label>
-          <label><span data-i18n="note">Lời nhắn</span><textarea rows="3" name="note" data-i18n-placeholder="notePlaceholder" placeholder="Lời nhắn thêm..."></textarea></label>
-          <button class="btn primary full" type="submit" data-i18n="confirm">Xác nhận tham dự</button>
+          <div class="contact-box"><strong data-i18n="contact">Liên hệ</strong><span>Tấn Phát: 09xx xxx xxx</span><span>Hồng Ngọc: 09xx xxx xxx</span></div>
+        </article>
+
+        <form class="rsvp-form reveal delay-1" id="rsvpForm">
+          <label><span data-i18n="guestName">Họ và tên</span><input name="guest" data-i18n-placeholder="guestNamePlaceholder" placeholder="Nhập tên của bạn" required></label>
+          <label><span data-i18n="guestCount">Số khách tham dự</span><select name="guests"><option>1 khách</option><option>2 khách</option><option>3 khách</option><option>4 khách</option></select></label>
+          <label><span data-i18n="attendPlace">Nơi tham dự</span><select name="place"><option>Tiệc cưới</option><option>Lễ thành hôn</option><option>Cả hai</option></select></label>
+          <label><span data-i18n="response">Phản hồi</span><select name="status"><option>Tôi sẽ tham dự</option><option>Rất tiếc, tôi không tham dự được</option></select></label>
+          <label><span data-i18n="note">Lời nhắn</span><textarea name="note" rows="3" data-i18n-placeholder="notePlaceholder" placeholder="Lời nhắn thêm..."></textarea></label>
+          <button class="primary-btn full" type="submit" data-i18n="confirm">Xác nhận tham dự</button>
         </form>
       </div>
     </section>
   </main>
 
-
-  <div class="mobile-dock" id="mobileDock">
-    <a href="#event" class="mobile-dock-btn"><span>⌘</span><small data-i18n="dockEvent">Hỷ sự</small></a>
-    <a href="#gallery" class="mobile-dock-btn"><span>◈</span><small data-i18n="dockGallery">Ảnh</small></a>
-    <button type="button" class="mobile-dock-btn mobile-dock-primary" id="dockMusic"><span>♪</span><small data-i18n="dockMusic">Nhạc</small></button>
-    <a href="#rsvp" class="mobile-dock-btn"><span>✉</span><small data-i18n="dockRsvp">RSVP</small></a>
+  <div class="bottom-dock">
+    <a href="#event"><span>礼</span><small data-i18n="dockEvent">Hỷ sự</small></a>
+    <a href="#gallery"><span>影</span><small data-i18n="dockGallery">Ảnh</small></a>
+    <button type="button" id="dockMusic"><span>♪</span><small data-i18n="dockMusic">Nhạc</small></button>
+    <a href="#rsvp"><span>信</span><small>RSVP</small></a>
   </div>
 
   <footer class="footer">
-    <div class="footer-mark">囍</div>
-    <p data-i18n="footerText">Cảm ơn bạn đã là một phần trong câu chuyện tình yêu của chúng tôi.</p>
+    <div>囍</div>
+    <p data-i18n="footer">Cảm ơn bạn đã là một phần trong câu chuyện tình yêu của chúng tôi.</p>
   </footer>
 
-  <dialog class="modal" id="photoModal">
-    <button class="modal-close" id="modalClose" aria-label="Đóng">×</button>
-    <img id="modalImage" src="" alt="Ảnh cưới" />
+  <dialog class="photo-modal" id="photoModal">
+    <button type="button" id="closeModal">×</button>
+    <img id="modalImg" alt="Wedding photo">
   </dialog>
 
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-  <script src="js/i18n.js"></script>
-  <script src="js/main.js"></script>
+  <div class="toast" id="toast"></div>
+  <script src="js/wedding.js"></script>
 </body>
 </html>

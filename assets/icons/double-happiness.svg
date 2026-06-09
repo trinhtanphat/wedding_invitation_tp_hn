@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#ffe8b5"/><stop offset="1" stop-color="#d49a3c"/></linearGradient></defs>
+<circle cx="60" cy="60" r="56" fill="#9e1b22"/><circle cx="60" cy="60" r="49" fill="none" stroke="url(#g)" stroke-width="3"/>
+<text x="60" y="80" text-anchor="middle" font-size="64" font-family="serif" fill="url(#g)">囍</text>
+</svg>
