@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#1a0507" />
   <meta name="description" content="Thiệp cưới online cổ phong của Tấn Phát và Hồng Ngọc" />
-  <title>Tấn Phát & Hồng Ngọc — Thiệp cưới online</title>
+  <title>Tấn Phát & Hồng Ngọc — Thiệp cưới online imperial gate</title>
   <link rel="icon" href="assets/icons/double-happiness.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/wedding.css" />
 </head>
-<body>
+<body class="site-locked gate-premium">
   <audio id="weddingMusic" preload="metadata" loop>
     <source src="assets/music/wedding-song.mp3" type="audio/mpeg" />
   </audio>
@@ -29,31 +29,105 @@
   </div>
   <div class="particle-layer" id="particleLayer" aria-hidden="true"></div>
 
-  <section class="cover" id="cover">
-    <div class="cover__ornament cover__ornament--left">
-      <img src="assets/images/dragon-crest.png" alt="Dragon ornament" />
-      <span>龍門大吉</span>
+  <section class="gate-overlay" id="gateOverlay" aria-label="Mở thiệp cưới">
+    <div class="gate-glow"></div>
+    <div class="v10-heaven-ring"></div>
+    <div class="v10-silk-ribbon ribbon-a"></div>
+    <div class="v10-silk-ribbon ribbon-b"></div>
+    <div class="immortal-mist mist-left"></div>
+    <div class="immortal-mist mist-right"></div>
+    <div class="dragon-line dragon-left"></div>
+    <div class="dragon-line dragon-right"></div>
+    <div class="phoenix-trail phoenix-left"></div>
+    <div class="phoenix-trail phoenix-right"></div>
+    <div class="pearls-arc"></div>
+    <div class="corner-creature creature-dragon" aria-hidden="true">
+      <img src="assets/images/dragon-corner.png" alt="Rồng trang trí" />
     </div>
-    <div class="cover__ornament cover__ornament--right">
-      <img src="assets/images/phoenix-crest.png" alt="Phoenix ornament" />
-      <span>鳳舞呈祥</span>
+    <div class="corner-creature creature-phoenix" aria-hidden="true">
+      <img src="assets/images/phoenix-corner.png" alt="Phượng trang trí" />
     </div>
-
-    <div class="cover-scroll">
-      <div class="scroll-rod scroll-rod--top"></div>
-      <div class="scroll-paper">
-        <div class="seal">囍</div>
-        <p class="eyebrow" data-i18n="coverEyebrow">Thiệp cưới online</p>
-        <h1 data-i18n="coverTitle">Tấn Phát & Hồng Ngọc</h1>
-        <p data-i18n="coverText">Một lời mời từ trái tim, được gói trong sắc đỏ hỷ sự, ánh vàng cung đăng và niềm vui đoàn viên.</p>
-        <button class="primary-btn" id="openInvitation" type="button">
-          <span data-i18n="openInvite">Mở thiệp cưới</span>
-        </button>
-        <small>♪ <span data-i18n="musicNote">Bấm mở thiệp để phát nhạc nền</span></small>
+    <div class="corner-horse horse-left" aria-hidden="true">
+      <img src="assets/images/horse-right-corner.png" alt="Ngựa trang trí bên trái" />
+    </div>
+    <div class="corner-horse horse-right" aria-hidden="true">
+      <img src="assets/images/horse-left-corner.png" alt="Ngựa trang trí bên phải" />
+    </div>
+    <div class="dragon-phoenix-banner banner-left"><span>龍門大吉</span></div>
+    <div class="dragon-phoenix-banner banner-right"><span>鳳舞呈祥</span></div>
+    <div class="royal-rays"></div>
+    <div class="moon-bridge"></div>
+    <div class="celestial-wave"></div>
+    <div class="gate-stage">
+      <div class="gate-roof">
+        <div class="roof-main"></div>
+        <div class="roof-eave left"></div>
+        <div class="roof-eave right"></div>
+        <div class="roof-ornament left"></div>
+        <div class="roof-ornament right"></div>
+        <div class="roof-center">囍</div>
+        <div class="roof-jade-line"></div>
       </div>
-      <div class="scroll-rod scroll-rod--bottom"></div>
+
+      <div class="imperial-plaque forbidden-plaque">百年好合</div>
+      <div class="flying-couplet couplet-left"><span>佳偶天成</span><span>永结同心</span></div>
+      <div class="flying-couplet couplet-right"><span>花好月圆</span><span>琴瑟和鸣</span></div>
+
+      <div class="gate-columns">
+        <div class="column left"></div>
+        <div class="column right"></div>
+      </div>
+
+      <div class="gate-inner">
+        <button class="gate-click-layer" id="gateClickLayer" type="button" aria-label="Open palace gate"></button>
+        <div class="top-drape"></div>
+        <div class="side-curtain left">
+          <div class="curtain-pattern"></div>
+          <div class="tassel one"></div>
+          <div class="tassel two"></div>
+        </div>
+        <div class="side-curtain right">
+          <div class="curtain-pattern"></div>
+          <div class="tassel one"></div>
+          <div class="tassel two"></div>
+        </div>
+
+        <div class="door-panel left">
+          <div class="panel-frame"></div>
+          <div class="panel-lattice"></div>
+          <div class="panel-emblem">囍</div>
+          <div class="panel-ring"></div>
+        </div>
+        <div class="door-panel right">
+          <div class="panel-frame"></div>
+          <div class="panel-lattice"></div>
+          <div class="panel-emblem">囍</div>
+          <div class="panel-ring"></div>
+        </div>
+
+        <div class="invitation-scroll">
+          <div class="scroll-ornament top"></div>
+          <div class="scroll-ornament bottom"></div>
+          <div class="fan fan-left"></div><div class="fan fan-right"></div><div class="seal-hero">囍</div><div class="red-stamp">良缘</div>
+          <p class="gate-kicker" data-i18n="coverEyebrow">Thiệp hỷ</p>
+          <h1 data-i18n="coverTitle">Tấn Phát & Hồng Ngọc</h1>
+          <p class="gate-copy" data-i18n="coverText">Mở cổng son và bước vào một đêm trăng, sương và hoa đăng của chúng tôi.</p>
+          <button class="open-btn" id="openInvitation" type="button" data-i18n="openInvite">Mở thiệp</button>
+          <p class="music-hint"><span>♪</span> <span data-i18n="musicNote">Nhạc sẽ phát sau khi mở thiệp</span></p>
+        </div>
+        <div class="lotus-lake"><i></i><i></i><i></i><span></span></div>
+      </div>
+
+      <div class="gate-base"></div>
+    </div>
+    <div class="version-ribbon">FINAL</div>
+    <div class="gate-open-hint">
+      <button class="open-btn floating-open" id="openGateFloating" type="button" data-i18n="openInvite">Mở thiệp</button>
+      <p data-i18n="clickHint">Nhấn để mở cổng cung đình</p><div class="tap-arrow">⌄</div><div class="tap-glow"></div>
     </div>
   </section>
+
+  <button class="replay-btn" id="replayGate" type="button" data-i18n="replayGate">Xem lại cổng</button>
 
   <header class="site-header" id="siteHeader">
     <a href="#home" class="site-brand">
